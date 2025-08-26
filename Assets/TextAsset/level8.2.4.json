@@ -1,0 +1,137 @@
+{
+    "name": "level8.2",
+    "items": [
+        {
+            "itemTag": "Gold500",
+            "position": [
+                1.7049,
+                -4.24
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                2.5949,
+                -1.26999986
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -2.4351,
+                -3.59
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -0.2451,
+                -3.66999984
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Diamond",
+            "position": [
+                1.6949,
+                -1.9799999
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Diamond",
+            "position": [
+                -2.5851,
+                -1.9599998
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Diamond",
+            "position": [
+                -0.735100031,
+                -2.48999977
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Diamond",
+            "position": [
+                -1.3651,
+                -4.29999971
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "TreasuryBag",
+            "position": [
+                0.0248999987,
+                -1.57999992
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "TreasuryBag",
+            "position": [
+                -1.4051,
+                -5.35999966
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Stone",
+            "position": [
+                0.7549,
+                -2.48999977
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Rock",
+            "position": [
+                -0.0851,
+                -4.72
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Mouse",
+            "position": [
+                -2.7251,
+                -1.37999988
+            ],
+            "endPoint": [
+                1.41489983,
+                -1.37999988
+            ],
+            "speed": 0.8
+        },
+        {
+            "itemTag": "MouseDiamond",
+            "position": [
+                2.2649,
+                -2.66999984
+            ],
+            "endPoint": [
+                -2.4851,
+                -2.66999984
+            ],
+            "speed": 0.8
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+  "name": "level4.3",
+  "items": [
+    {
+      "endPoint": [
+        -2.6251,
+        -2.2
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.3749,
+        -2.2
+      ]
+    },
+    {
+      "endPoint": [
+        2.53490019,
+        -1.453747
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.46509981,
+        -1.453747
+      ]
+    },
+    {
+      "endPoint": [
+        2.5449,
+        -3.031539
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4551,
+        -3.031539
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        1.4349,
+        -6.33246565
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        -0.00509989075,
+        -5.3424654
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.98509979,
+        -5.712466
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -2.12509966,
+        -3.81246567
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        1.9449,
+        -3.77246571
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -1.4351,
+        -2.96246576
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        0.2649001,
+        -4.76246548
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -1.464132,
+        -1.93617237
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        1.3749001,
+        -2.41246557
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -1.22509992,
+        -6.822466
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        1.16490006,
+        -4.412466
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        0.5049001,
+        -1.23246574
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -1.26509988,
+        -4.532466
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -0.315099835,
+        -2.96246576
+      ]
+    }
+  ]
+}

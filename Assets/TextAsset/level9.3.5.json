@@ -1,0 +1,165 @@
+{
+  "name": "level9.3",
+  "items": [
+    {
+      "endPoint": [
+        -2.5951,
+        -1.71
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.4049,
+        -1.71
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5651,
+        -5.27999973
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.4349,
+        -5.27999973
+      ]
+    },
+    {
+      "endPoint": [
+        2.49490023,
+        -5.31999969
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.50509977,
+        -5.31999969
+      ]
+    },
+    {
+      "endPoint": [
+        2.55490017,
+        -3.558501
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.44509983,
+        -3.558501
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.0648999959,
+        -5.13
+      ]
+    },
+    {
+      "itemTag": "Skull",
+      "position": [
+        0.0949,
+        -6.12
+      ]
+    },
+    {
+      "itemTag": "Bone",
+      "position": [
+        0.0349000022,
+        -4.24
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.3149,
+        -3.48
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.3249,
+        -1.69
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        0.9449,
+        -5.73
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.2851,
+        -1.58
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.2651,
+        -3.5
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        2.2049,
+        -1.09
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        1.8449,
+        -4.75
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -1.8251,
+        -4.81
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -0.0151,
+        -2.5
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.8051,
+        -5.77
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.4849,
+        -3.538501
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.5451,
+        -3.54
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -2.2751,
+        -1.2
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+    "name": "level5.3",
+    "items": [
+        {
+            "itemTag": "Gold500",
+            "position": [
+                2.2449,
+                -4.71
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -2.3551,
+                -4.29
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -1.5551,
+                -1.81
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                0.004899999,
+                -2.58
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                2.4949,
+                -2.37
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                0.7449,
+                -3.68999982
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold50",
+            "position": [
+                1.6049,
+                -1.57999992
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold50",
+            "position": [
+                -2.4151,
+                -3.13999987
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Diamond",
+            "position": [
+                -0.1751,
+                -4.45
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Bone",
+            "position": [
+                -2.4451,
+                -1.32999992
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Rock",
+            "position": [
+                -1.0251,
+                -3.13999987
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Rock",
+            "position": [
+                1.3649,
+                -2.79
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        }
+    ]
+}

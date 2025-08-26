@@ -1,0 +1,89 @@
+{
+  "name": "level1.2",
+  "items": [
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -0.4451,
+        -5.66
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        1.7049,
+        -1.83
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -2.6051,
+        -0.99
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.1051,
+        -3.94
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -0.115100004,
+        -2.02
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -2.1051,
+        -4.92
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        1.4049,
+        -5.52999973
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        2.6249,
+        -1.33
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -2.6751,
+        -1.81
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        2.0849,
+        -3.15
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -2.2051,
+        -2.89
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        0.9349,
+        -4.55
+      ]
+    }
+  ]
+}

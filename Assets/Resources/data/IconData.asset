@@ -1,0 +1,587 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3f873d8659789c2549f7155cd7effb, type: 3}
+  m_Name: IconData
+  m_EditorClassIdentifier:
+  list:
+  - group: Gold Shop
+    data:
+    - key: gold_bar_1,gold
+      sprite: {fileID: 21300000, guid: dc3ccd154f3d5634682b21e48083e411, type: 2}
+    - key: gold_bar_2
+      sprite: {fileID: 21300000, guid: 7ff7955e83b1c0042bb0a3440b7bdb15, type: 2}
+    - key: gold_bar_3
+      sprite: {fileID: 21300000, guid: 170030a94b03f5f419eacc29fb98a9e3, type: 2}
+    - key: gold_bar_4
+      sprite: {fileID: 21300000, guid: 9f6912e335840d443ba75cf36e05632a, type: 2}
+    - key: gold_bar_5
+      sprite: {fileID: 21300000, guid: 8f57d05653e930f44886e600a3e8f0b8, type: 2}
+    - key: gold_bar_6
+      sprite: {fileID: 21300000, guid: a5cca65511d8df54cb5d68765341bdce, type: 2}
+  - group: Button
+    data:
+    - key: button_green
+      sprite: {fileID: 21300000, guid: 28e5cc3d91e966347bb5284e7e602fc1, type: 2}
+    - key: button_gray
+      sprite: {fileID: 21300000, guid: a5f8cee76e3c3ab4ab1c46d90a192638, type: 2}
+    - key: icon_spin
+      sprite: {fileID: 21300000, guid: 01870bc5cb38e2147a2dab3592f00c4b, type: 2}
+    - key: icon_spin_disable
+      sprite: {fileID: 21300000, guid: 312326516172769469fc61038e1525cc, type: 2}
+    - key: shop_tab_selected
+      sprite: {fileID: 21300000, guid: 3bb66176988ad5c4ba18cb9ad3824f7b, type: 2}
+    - key: shop_tab_normal
+      sprite: {fileID: 21300000, guid: 0ab15cec5e65996498b9a6f16eb9688e, type: 2}
+    - key: shop_tab_disable
+      sprite: {fileID: 21300000, guid: 19bfdd9c4d679a6419047f2f4098c46f, type: 2}
+  - group: Boostets
+    data:
+    - key: lucky_ticket
+      sprite: {fileID: 21300000, guid: bf672cce60fbb2d4ba6b445d340a1bcc, type: 2}
+    - key: dynamite
+      sprite: {fileID: 21300000, guid: 5e18cb195ee744745a7201556fac2ddc, type: 2}
+    - key: lucky_clover
+      sprite: {fileID: 21300000, guid: 9ff79a13027cdbf4b9cdff505ec9bdf6, type: 2}
+    - key: pocket_watch
+      sprite: {fileID: 21300000, guid: b624160af693aa348acf12c8c21640ad, type: 2}
+    - key: strength_drink
+      sprite: {fileID: 21300000, guid: 6e4c565f36d147f4fb2a068b3c040954, type: 2}
+    - key: diamond
+      sprite: {fileID: 21300000, guid: fa9140210f0fc6d46ae64059a1529b09, type: 2}
+    - key: miner
+      sprite: {fileID: 21300000, guid: 8351bbbcdd9f9c64da2a3c21e0b504a2, type: 2}
+    - key: rock
+      sprite: {fileID: 21300000, guid: b8dd9841e7d7f31459ae7386762cbf56, type: 2}
+    - key: dynamite_offer
+      sprite: {fileID: 21300000, guid: beead542b0a3ae441b21507d5df446cb, type: 2}
+    - key: more_gold
+      sprite: {fileID: 21300000, guid: e59eeead0974db34fa35f24990f6b775, type: 2}
+    - key: more_diamond
+      sprite: {fileID: 21300000, guid: 959cfdb3f5cb82e4eb6f222bab95a2f5, type: 2}
+  - group: TicketShop
+    data:
+    - key: ticket_1
+      sprite: {fileID: 21300000, guid: 4edc7e111ea18a8439f302b8154ecc5a, type: 2}
+    - key: ticket_2
+      sprite: {fileID: 21300000, guid: 06caeec473875134caa363e40347e982, type: 2}
+    - key: ticket_3
+      sprite: {fileID: 21300000, guid: 339049e1836ceef4791fe7b01ec76bdd, type: 2}
+    - key: ticket_4
+      sprite: {fileID: 21300000, guid: 5eecd388cea2f7d4e907dabda5439b88, type: 2}
+    - key: ticket_5
+      sprite: {fileID: 21300000, guid: 0d18cfa4534a53b4c989df1272fbc640, type: 2}
+    - key: ticket_6
+      sprite: {fileID: 21300000, guid: 96a2ffdb40347fe409456f3a8da7b641, type: 2}
+  - group: OfferIcon
+    data:
+    - key: starter_pack_icon
+      sprite: {fileID: 21300000, guid: 3a7652aebe075624fbf9d7c1ae427925, type: 2}
+    - key: thor_pack_icon
+      sprite: {fileID: 21300000, guid: e323c70e1869e6448aa5c966cd3e5057, type: 2}
+    - key: vip_pack_icon
+      sprite: {fileID: 21300000, guid: a22bef683ea8b7945b5c8148e6647e29, type: 2}
+    - key: monkey_pack_icon
+      sprite: {fileID: 21300000, guid: eb2f63dffcd20d74cb4201dd8173b2c7, type: 2}
+    - key: spider_pack_icon
+      sprite: {fileID: 21300000, guid: afc694cbad2b39548b0c967453b6e380, type: 2}
+    - key: ariana_icon
+      sprite: {fileID: 21300000, guid: 3a26cebf13be09746b2d013286cd6af3, type: 2}
+    - key: batman_icon
+      sprite: {fileID: 21300000, guid: 3f7a3b1e48effa64591ebe976e3af531, type: 2}
+    - key: deluxe_icon
+      sprite: {fileID: 21300000, guid: 4737f5aca945b184d84bef68f6224622, type: 2}
+    - key: hakan
+      sprite: {fileID: 21300000, guid: 8683762aed875b9468dc7a44497bb0ca, type: 2}
+    - key: iron_man_icon
+      sprite: {fileID: 21300000, guid: 4ac63619725a88040929f8441474c574, type: 2}
+    - key: jaki_icon
+      sprite: {fileID: 21300000, guid: d64983ef0c59f774784fdfcfe507c233, type: 2}
+    - key: matryoshaka_icon
+      sprite: {fileID: 21300000, guid: 5ba527d833692a7479ddeee500c7fe51, type: 2}
+    - key: pirate_icon
+      sprite: {fileID: 21300000, guid: 7cb67d2a1f093144f95b1d24dc41ea09, type: 2}
+    - key: son_tung_icon
+      sprite: {fileID: 21300000, guid: c72088b4706329c4f8466cddf4c40f82, type: 2}
+    - key: skeleton_icon
+      sprite: {fileID: 21300000, guid: 4fb9b5bef4f448f4f9ba4468514cc44e, type: 2}
+    - key: soldier_icon
+      sprite: {fileID: 21300000, guid: a8dbcdf8d40925c40bbf7a64c7fcb382, type: 2}
+    - key: viking_icon
+      sprite: {fileID: 21300000, guid: 565a59821e050894b9054a691a2216b7, type: 2}
+    - key: Billionaire
+      sprite: {fileID: 21300000, guid: 5b6845bd0b1926843bb0a353ca44fbd6, type: 2}
+    - key: taylor_icon
+      sprite: {fileID: 21300000, guid: 83c034fc33b46dd4598dd1bf22076426, type: 2}
+    - key: red_girl
+      sprite: {fileID: 21300000, guid: d64983ef0c59f774784fdfcfe507c233, type: 2}
+    - key: Millionaire
+      sprite: {fileID: 21300000, guid: 295ac5dd65b187e459fced1e1c4617f2, type: 2}
+  - group: Miner
+    data:
+    - key: thor_miner
+      sprite: {fileID: 21300000, guid: 2fa03d52cb53b624e934a6915e70ad30, type: 2}
+    - key: wukong_miner
+      sprite: {fileID: 21300000, guid: 9ee46b8a0578ae34b8f8df060e6122a5, type: 2}
+    - key: spider_miner
+      sprite: {fileID: 21300000, guid: 4b43c036f80ed9545b0e08338eb1ace6, type: 2}
+    - key: dark_lord
+      sprite: {fileID: 21300000, guid: c9c6e1e16e5f8de43aa7ed8e1116c256, type: 2}
+    - key: matryoshaka_miner
+      sprite: {fileID: 21300000, guid: ff60ee713bcc2fe4b9aa48ac24bbb438, type: 2}
+    - key: deluxe_miner
+      sprite: {fileID: 21300000, guid: 0983a388b6c3fe446a87d0990e2c28d8, type: 2}
+    - key: pirate_miner
+      sprite: {fileID: 21300000, guid: 12c60b612a0cf0345a7fd44dd7e70592, type: 2}
+    - key: viking_miner
+      sprite: {fileID: 21300000, guid: d84e3476bbcd69e46802e4befe75c912, type: 2}
+    - key: taylor_miner
+      sprite: {fileID: 21300000, guid: 92297e21ddf54f5428cc6766b540087a, type: 2}
+    - key: ariana_miner
+      sprite: {fileID: 21300000, guid: 72cc3beb7b0fedb4cb06e072a35be97c, type: 2}
+    - key: red_girl_miner
+      sprite: {fileID: 21300000, guid: 1abd74e4a7ae9e84fb50df96fda77736, type: 2}
+    - key: skeleton_miner
+      sprite: {fileID: 21300000, guid: f1a6c9b8c0b9d244d8c01ab1505b25bf, type: 2}
+    - key: hakan_miner
+      sprite: {fileID: 21300000, guid: dba5ba9921ba58349a074fbe7d07b016, type: 2}
+    - key: iron_man_miner
+      sprite: {fileID: 21300000, guid: e4a8b4d7fb55f1e4eaa38820520c030b, type: 2}
+    - key: bat_man_miner
+      sprite: {fileID: 21300000, guid: b289b9c8c88161e40a23737482f3fd78, type: 2}
+    - key: songjooki_miner
+      sprite: {fileID: 21300000, guid: 27fff513aae02b74986869036695aabc, type: 2}
+    - key: son_tung_miner
+      sprite: {fileID: 21300000, guid: a84f4e6fb406b574aa3ee887cabc084c, type: 2}
+  - group: Confirm
+    data:
+    - key: icon_shop
+      sprite: {fileID: 21300000, guid: 3a76be66c28bc0145892e89034d331d7, type: 2}
+    - key: check_box
+      sprite: {fileID: 21300000, guid: 846966760ed86ff41940c3477f50e875, type: 2}
+    - key: x_stick
+      sprite: {fileID: 21300000, guid: fe4729a8c5ad7204eac20fab40077c01, type: 2}
+    - key: v_stick
+      sprite: {fileID: 21300000, guid: 1a3adb6653a271544bbf2472e7cd845f, type: 2}
+  - group: Frame
+    data:
+    - key: gray_frame
+      sprite: {fileID: 21300000, guid: 2aebadef2715d9547bf38e2018c2667d, type: 2}
+    - key: green_frame
+      sprite: {fileID: 21300000, guid: df5d5979f0dce6b48a5ac062be348d26, type: 2}
+    - key: brown_frame
+      sprite: {fileID: 21300000, guid: b41c926caec633a46be7c5fe12ea84a7, type: 2}
+  - group: GemMiniGame
+    data:
+    - key: gem_1x1_blue,gem_2x2_blue,gem_3x3_blue,gem_4x4_blue
+      sprite: {fileID: 21300000, guid: 0cfe00c632af00c4db824200176f5908, type: 2}
+    - key: gem_1x1_green,gem_2x2_green,gem_3x3_green,gem_4x4_green
+      sprite: {fileID: 21300000, guid: 524bb4a0290fb234e8b7d98866a5d632, type: 2}
+    - key: gem_1x1_pink,gem_2x2_pink,gem_3x3_pink,gem_4x4_pink
+      sprite: {fileID: 21300000, guid: 11af1a387e8b9b8409696b93dfb47c76, type: 2}
+    - key: gem_1x1_red,gem_2x2_red,gem_3x3_red,gem_4x4_red
+      sprite: {fileID: 21300000, guid: 3b56bb0f4ef090c4d82d936c335731c9, type: 2}
+    - key: gem_1x1_yellow,gem_2x2_yellow,gem_3x3_yellow,gem_4x4_yellow
+      sprite: {fileID: 21300000, guid: 1e1b77d155a53a247a801b5108f48900, type: 2}
+    - key: gem_1x2_blue,gem_2x4_blue
+      sprite: {fileID: 21300000, guid: cb7a24633bc98f44bbefba0c0f394d51, type: 2}
+    - key: gem_1x2_green,gem_2x4_green
+      sprite: {fileID: 21300000, guid: f2ed9010592f980418d13e0ea57bacfc, type: 2}
+    - key: gem_1x2_pink,gem_2x4_pink
+      sprite: {fileID: 21300000, guid: 2e3a2f1979d40454d8553da90eb861b7, type: 2}
+    - key: gem_1x2_red,gem_2x4_red
+      sprite: {fileID: 21300000, guid: 9c5c722b01f986c4d953561d92908c14, type: 2}
+    - key: gem_1x2_yellow,gem_2x4_yellow
+      sprite: {fileID: 21300000, guid: aaa781834a0c9734089b6f9fa47db1e4, type: 2}
+    - key: gem_1x3_blue
+      sprite: {fileID: 21300000, guid: a558e6946aa0f3f4e83fd59416f729ad, type: 2}
+    - key: gem_1x3_green
+      sprite: {fileID: 21300000, guid: d2891810a9eef4641bd427f252b8bfe4, type: 2}
+    - key: gem_1x3_pink
+      sprite: {fileID: 21300000, guid: 5e32867b8df75f140a5378809afcc0c6, type: 2}
+    - key: gem_1x3_red
+      sprite: {fileID: 21300000, guid: 4dc94583335bdf142b87acaafc3fae3f, type: 2}
+    - key: gem_1x3_yellow
+      sprite: {fileID: 21300000, guid: 058f9ea0e47fa364d8214d1335767d45, type: 2}
+    - key: gem_1x4_blue
+      sprite: {fileID: 21300000, guid: 796f6923bd1499049807ce882fcb48d5, type: 2}
+    - key: gem_1x4_green
+      sprite: {fileID: 21300000, guid: 3e868c0598f10c642be3c9b7374d3211, type: 2}
+    - key: gem_1x4_pink
+      sprite: {fileID: 21300000, guid: db9f646397ee2df4fa24d4c26b6f0a31, type: 2}
+    - key: gem_1x4_red
+      sprite: {fileID: 21300000, guid: b89aad1ca15fc70439e8aa405d07e77b, type: 2}
+    - key: gem_1x4_yellow
+      sprite: {fileID: 21300000, guid: fa53088f8e25a6347ae6da0bcd39244b, type: 2}
+    - key: gem_1x5_blue
+      sprite: {fileID: 21300000, guid: 914d9b7be24e3dc479a501511f44801b, type: 2}
+    - key: gem_1x5_green
+      sprite: {fileID: 21300000, guid: 1ac3578b3e7f6cf4ab892c10a1358ec5, type: 2}
+    - key: gem_1x5_pink
+      sprite: {fileID: 21300000, guid: f12d23757b809ec4a9a7a1a348c838dc, type: 2}
+    - key: gem_1x5_red
+      sprite: {fileID: 21300000, guid: f63c0b53479d14e408479d78af213a71, type: 2}
+    - key: gem_1x5_yellow
+      sprite: {fileID: 21300000, guid: 985110cb04baaac4fa0df7f45cd7d3ab, type: 2}
+    - key: gem_2x3_blue
+      sprite: {fileID: 21300000, guid: dd6d2f4a9d1b2a84a96d25709396feea, type: 2}
+    - key: gem_2x3_green
+      sprite: {fileID: 21300000, guid: a6ccb83032ec9494fb48df78570bf14a, type: 2}
+    - key: gem_2x3_pink
+      sprite: {fileID: 21300000, guid: 6714d1f697b16534d852ca2fa3ea310e, type: 2}
+    - key: gem_2x3_red
+      sprite: {fileID: 21300000, guid: 1586b30110a2a8e499ad1390749b0de8, type: 2}
+    - key: gem_2x3_yellow
+      sprite: {fileID: 21300000, guid: 104e9246e5b52e648852a0767ac57598, type: 2}
+  - group: Ads
+    data:
+    - key: remove_ads
+      sprite: {fileID: 21300000, guid: 36f83937d9c9ec44583db9c7868f2a6f, type: 2}
+  - group: Chest
+    data:
+    - key: blue_chest
+      sprite: {fileID: 21300000, guid: 7faabddba53aaa547a9c2607c1a4472d, type: 2}
+    - key: copper_chest
+      sprite: {fileID: 21300000, guid: a923cc3dd4979dd4cb482fc1635643c3, type: 2}
+    - key: silver_chest
+      sprite: {fileID: 21300000, guid: 7faabddba53aaa547a9c2607c1a4472d, type: 2}
+    - key: gold_chest
+      sprite: {fileID: 21300000, guid: 7cd202740ad04624e92b5af1fbb9b8a6, type: 2}
+    - key: platinum_chest
+      sprite: {fileID: 21300000, guid: 34965bdf98c43844fa28ac77d3a8e6f7, type: 2}
+    - key: tier_chest
+      sprite: {fileID: 21300000, guid: f755ea7146727bd4d94e7933e981bcfc, type: 2}
+  - group: Item
+    data:
+    - key: gold_item
+      sprite: {fileID: 21300000, guid: e94b29bf062d9bb43b4c8e51dae2a6c3, type: 2}
+    - key: diamond_item
+      sprite: {fileID: 21300000, guid: a0fb25f620f5baa4886b3fd46beed77d, type: 2}
+    - key: bone_item
+      sprite: {fileID: 21300000, guid: d15ffde65cb571841acdc018ac5cdc8f, type: 2}
+    - key: dynamite_item
+      sprite: {fileID: 21300000, guid: 66b42d6e0fd4a6948a7b556568ea52f9, type: 2}
+    - key: tnt_item
+      sprite: {fileID: 21300000, guid: 3a055c2e75947b043822664ade9da7a4, type: 2}
+    - key: mouse_item
+      sprite: {fileID: 21300000, guid: ba55f1eb73b4d0d4aab55d003aa2abdb, type: 2}
+    - key: mouse_diamond_item
+      sprite: {fileID: 21300000, guid: 5155c39ebcf3ad4448f56f6845d8d8ab, type: 2}
+    - key: skull_item
+      sprite: {fileID: 21300000, guid: 193ec6c23b7b55846b5b7cc81e1e1052, type: 2}
+    - key: stone_item
+      sprite: {fileID: 21300000, guid: 4490248ed74577e44a040063b7b7b3d7, type: 2}
+    - key: rock_item
+      sprite: {fileID: 21300000, guid: 0dc3c537c61e9974c92630e6de67f5bc, type: 2}
+  - group: Icon
+    data:
+    - key: green_tick
+      sprite: {fileID: 21300000, guid: 1a3adb6653a271544bbf2472e7cd845f, type: 2}
+    - key: green_nut
+      sprite: {fileID: 21300000, guid: e9eec18e0f69aea4b9d8bf5286e11bd4, type: 2}
+    - key: blue_nut
+      sprite: {fileID: 21300000, guid: 2d943ea6446eb834ca622fe5e7a2d0fa, type: 2}
+    - key: top_nut_board
+      sprite: {fileID: 21300000, guid: de4ba830e9133d948b03e119397a7b99, type: 2}
+    - key: bottom_nut_board
+      sprite: {fileID: 21300000, guid: ab45a0fb60bfbf74fb36d36e5728e0ee, type: 2}
+    - key: middle_nut_board
+      sprite: {fileID: 21300000, guid: 861ea36833b3d2242820f761a6c373af, type: 2}
+    - key: organe_nut
+      sprite: {fileID: 21300000, guid: d07c2e7da4598a14583765bac29747bb, type: 2}
+  - group: SubTarget
+    data:
+    - key: candy_0
+      sprite: {fileID: 21300000, guid: 37d5f4a38bfa0be42a49f53facf7290c, type: 2}
+    - key: candy_1
+      sprite: {fileID: 21300000, guid: 6a021c1384f17b040a29a1938c663c5b, type: 2}
+    - key: candy_2
+      sprite: {fileID: 21300000, guid: 7aaa7438a43c8a241bc025681cba7d8b, type: 2}
+    - key: candy_3
+      sprite: {fileID: 21300000, guid: 156413f7ceeb139428ed826e041780cd, type: 2}
+    - key: jewel_0
+      sprite: {fileID: 21300000, guid: d22ab0b06fd64e5449f4557f524b2a40, type: 2}
+    - key: jewel_1
+      sprite: {fileID: 21300000, guid: 11e064cecf849a141b4508fbb13408d4, type: 2}
+    - key: jewel_2
+      sprite: {fileID: 21300000, guid: 3e15455413ad6a941bccd64fc374b683, type: 2}
+    - key: jewel_3
+      sprite: {fileID: 21300000, guid: 2e88856b8ce38ad46b3e3e7754344600, type: 2}
+    - key: flower_0
+      sprite: {fileID: 21300000, guid: 1dd9943ccd366ff4e81c7a1ea6385b27, type: 2}
+    - key: flower_1
+      sprite: {fileID: 21300000, guid: becc669dde177064a8df5fd46767f4ee, type: 2}
+    - key: flower_2
+      sprite: {fileID: 21300000, guid: de7c6c72dfa5b5948a5fd536afa7752c, type: 2}
+    - key: flower_3
+      sprite: {fileID: 21300000, guid: f2aab5f4659485443a8b131e4ca1a875, type: 2}
+    - key: artifacts_0
+      sprite: {fileID: 21300000, guid: 87b8c067b8162d742a52433b9b8e5eed, type: 2}
+    - key: artifacts_1
+      sprite: {fileID: 21300000, guid: 56e428d664d27c04aafc2e2a7eecf7e7, type: 2}
+    - key: artifacts_2
+      sprite: {fileID: 21300000, guid: f28957fb6a671604eb36ae53600d26c3, type: 2}
+    - key: artifacts_3
+      sprite: {fileID: 21300000, guid: 31baa4b32d918554585b9ff6cb08ae4b, type: 2}
+    - key: princess_0
+      sprite: {fileID: 21300000, guid: b23203bceef36314ebb23bd57882509c, type: 2}
+    - key: princess_1
+      sprite: {fileID: 21300000, guid: 7afbbcc7e272d034cbaea7cb1537a628, type: 2}
+    - key: princess_2
+      sprite: {fileID: 21300000, guid: c869baee94d9c1a42a3fd0eaaa7ddcd4, type: 2}
+    - key: princess_3
+      sprite: {fileID: 21300000, guid: b61aaa1227661f44ca1843da04df3a80, type: 2}
+    - key: ocean_0
+      sprite: {fileID: 21300000, guid: 3545a83a57997174f9c27269420fd551, type: 2}
+    - key: ocean_1
+      sprite: {fileID: 21300000, guid: 3d9a0995a88a4a1469c36c2f976c9b10, type: 2}
+    - key: ocean_2
+      sprite: {fileID: 21300000, guid: 6975550af5e64254cbecdb4539a46b19, type: 2}
+    - key: ocean_3
+      sprite: {fileID: 21300000, guid: a1b92ab85848d2346a23d7fab9f75076, type: 2}
+    - key: fruit_0
+      sprite: {fileID: 21300000, guid: 2b587d2f5caf02b4badb9ceed0281263, type: 2}
+    - key: fruit_1
+      sprite: {fileID: 21300000, guid: 5b394a81fe0827a4593008b355f9287a, type: 2}
+    - key: fruit_2
+      sprite: {fileID: 21300000, guid: d8553f7e9301d77438cb3ac80de73d70, type: 2}
+    - key: fruit_3
+      sprite: {fileID: 21300000, guid: b45e3e247aba6ac42969e18985d8dc72, type: 2}
+    - key: school_0
+      sprite: {fileID: 21300000, guid: 85d2b746e89f73e428be165da8de2aa9, type: 2}
+    - key: school_1
+      sprite: {fileID: 21300000, guid: 5e0db8d0745bcac4e90aaa4cb894abb9, type: 2}
+    - key: school_2
+      sprite: {fileID: 21300000, guid: accf8097d76128746b72111cd866e9ab, type: 2}
+    - key: school_3
+      sprite: {fileID: 21300000, guid: 9e28e4685c973c74f919d806ad61fc4e, type: 2}
+    - key: toys_0
+      sprite: {fileID: 21300000, guid: a184efe012ee6e84ea7fad781e3bc646, type: 2}
+    - key: toys_1
+      sprite: {fileID: 21300000, guid: af06c644573680a4d82ae4f903bf1c33, type: 2}
+    - key: toys_2
+      sprite: {fileID: 21300000, guid: c07ad7694ed1664408731ff131b1c091, type: 2}
+    - key: toys_3
+      sprite: {fileID: 21300000, guid: 6df8ce4f2133f104d8eb49529c31146a, type: 2}
+    - key: outdoor_0
+      sprite: {fileID: 21300000, guid: 4c0eaa78f6f12ed4c8e13b1cc6f184e0, type: 2}
+    - key: outdoor_1
+      sprite: {fileID: 21300000, guid: 2c53fdc782b4b7845b72dcbd5e5b195c, type: 2}
+    - key: outdoor_2
+      sprite: {fileID: 21300000, guid: 28039cbd2c238764b8ab4e3a2156e9c9, type: 2}
+    - key: outdoor_3
+      sprite: {fileID: 21300000, guid: 8ec1594577064f544aadb0b2cc2a61e9, type: 2}
+    - key: dreamy_0
+      sprite: {fileID: 21300000, guid: 9e15392b763ccae4c945bac96abc7977, type: 2}
+    - key: dreamy_1
+      sprite: {fileID: 21300000, guid: 5875681757d2e1244a587fe4484b623b, type: 2}
+    - key: dreamy_2
+      sprite: {fileID: 21300000, guid: 53710ad92e184894f9fbd4bbf24009ec, type: 2}
+    - key: dreamy_3
+      sprite: {fileID: 21300000, guid: 73a5cb07b77f8ad4ab1eb98b0c80b1d4, type: 2}
+    - key: laundry_0
+      sprite: {fileID: 21300000, guid: 428031477f34efc4d8dd7af5bb6d242d, type: 2}
+    - key: laundry_1
+      sprite: {fileID: 21300000, guid: dcb6dd9b7fd2f084481756713d4da8ad, type: 2}
+    - key: laundry_2
+      sprite: {fileID: 21300000, guid: a7f7cb90bada5a742bc97416b6609d1a, type: 2}
+    - key: laundry_3
+      sprite: {fileID: 21300000, guid: 460469f8b9b063242b7bc2459c24b92b, type: 2}
+    - key: baking_0
+      sprite: {fileID: 21300000, guid: a2205028de57511469bf6e5eea4fb98a, type: 2}
+    - key: baking_1
+      sprite: {fileID: 21300000, guid: b782b0641b3f3a24b8243713f0a38ebb, type: 2}
+    - key: baking_2
+      sprite: {fileID: 21300000, guid: a7045fed22d0b8a43b38dccf799dda67, type: 2}
+    - key: baking_3
+      sprite: {fileID: 21300000, guid: a8a2b6434903cc34f9a68480ac73192a, type: 2}
+    - key: dailyroutine_0
+      sprite: {fileID: 21300000, guid: ae31a2815498ff34b90001ed767eaf57, type: 2}
+    - key: dailyroutine_1
+      sprite: {fileID: 21300000, guid: 3913e6ec617db33499a09474f87a41bc, type: 2}
+    - key: dailyroutine_2
+      sprite: {fileID: 21300000, guid: 3be5bf1ee35b5bb4fbd2e15f8424ceae, type: 2}
+    - key: dailyroutine_3
+      sprite: {fileID: 21300000, guid: b227a138967873b42bca7371fee41d42, type: 2}
+    - key: kitchen_0
+      sprite: {fileID: 21300000, guid: 766eb737e9bc12d4f85a74390261c498, type: 2}
+    - key: kitchen_1
+      sprite: {fileID: 21300000, guid: 933dff453cc06394a92375d2748045f5, type: 2}
+    - key: kitchen_2
+      sprite: {fileID: 21300000, guid: ab8f42d573a466b41876a4fc53dde9c6, type: 2}
+    - key: kitchen_3
+      sprite: {fileID: 21300000, guid: 882be323a68e8cc4a8605953289ecc9a, type: 2}
+    - key: sewingkit_0
+      sprite: {fileID: 21300000, guid: 766eb737e9bc12d4f85a74390261c498, type: 2}
+    - key: sewingkit_1
+      sprite: {fileID: 21300000, guid: 933dff453cc06394a92375d2748045f5, type: 2}
+    - key: sewingkit_2
+      sprite: {fileID: 21300000, guid: ab8f42d573a466b41876a4fc53dde9c6, type: 2}
+    - key: sewingkit_3
+      sprite: {fileID: 21300000, guid: 882be323a68e8cc4a8605953289ecc9a, type: 2}
+    - key: snack_0
+      sprite: {fileID: 21300000, guid: 9ffb56402996eb9469fe96522990c41c, type: 2}
+    - key: snack_1
+      sprite: {fileID: 21300000, guid: dd98486b956f85c498132d4c12af1024, type: 2}
+    - key: snack_2
+      sprite: {fileID: 21300000, guid: 6b00b1a901ad2ab44bc5be6c1feb0bda, type: 2}
+    - key: snack_3
+      sprite: {fileID: 21300000, guid: 115a81295ca7d824dbcd52d136c6b818, type: 2}
+    - key: playgroundjoy_0
+      sprite: {fileID: 21300000, guid: bb05ff3d0e5a13d41954d8847ace32be, type: 2}
+    - key: playgroundjoy_1
+      sprite: {fileID: 21300000, guid: e94e71aeb28a847498b17cb881c96fe9, type: 2}
+    - key: playgroundjoy_2
+      sprite: {fileID: 21300000, guid: 39125acdea8ef434b92a6aeccdb0e777, type: 2}
+    - key: playgroundjoy_3
+      sprite: {fileID: 21300000, guid: 6123f8dd7b95976419af5926ab62f19f, type: 2}
+    - key: coloring_0
+      sprite: {fileID: 21300000, guid: 93aba9cc660ff884d97bebdd1aa912ed, type: 2}
+    - key: coloring_1
+      sprite: {fileID: 21300000, guid: 9d2c0fce73179254abb6d349b72fd377, type: 2}
+    - key: coloring_2
+      sprite: {fileID: 21300000, guid: 548506925c2e0e04d8909208270521ff, type: 2}
+    - key: coloring_3
+      sprite: {fileID: 21300000, guid: 42d1690fb00e6ad40ba6266d01c9b93f, type: 2}
+    - key: chill_0
+      sprite: {fileID: 21300000, guid: 0cdf35610e04b0d419185c5a15c813df, type: 2}
+    - key: chill_1
+      sprite: {fileID: 21300000, guid: 99bab3b28fca59746b0ba1c7282ace12, type: 2}
+    - key: chill_2
+      sprite: {fileID: 21300000, guid: 28f7e74c3796b734fb3de75dcf81bf9f, type: 2}
+    - key: chill_3
+      sprite: {fileID: 21300000, guid: 2fa59620bca10364e8bf5ce147f56ed1, type: 2}
+    - key: groceryessentials_0
+      sprite: {fileID: 21300000, guid: d1a1bbeb7af553c4b96e10821a72aeb6, type: 2}
+    - key: groceryessentials_1
+      sprite: {fileID: 21300000, guid: f2bdb39c21f20474baa20c0ad99cb4ff, type: 2}
+    - key: groceryessentials_2
+      sprite: {fileID: 21300000, guid: 4e69edd64ed182943aee427ffc13eecd, type: 2}
+    - key: groceryessentials_3
+      sprite: {fileID: 21300000, guid: 14ee1ba683fcb7b4ab6a4ecef51f0e7e, type: 2}
+    - key: cozydesk_0
+      sprite: {fileID: 21300000, guid: a437693f1c867754487d64901ea92958, type: 2}
+    - key: cozydesk_1
+      sprite: {fileID: 21300000, guid: 501a31ab56ce92548a14abd505de890e, type: 2}
+    - key: cozydesk_2
+      sprite: {fileID: 21300000, guid: 547a80ccf45550e42af34edd1e3df63c, type: 2}
+    - key: cozydesk_3
+      sprite: {fileID: 21300000, guid: 8dca42496d8f69b49b7a7e5422955786, type: 2}
+    - key: musical_0
+      sprite: {fileID: 21300000, guid: 80bbbca615c3ced49ab6bbc27c09e03a, type: 2}
+    - key: musical_1
+      sprite: {fileID: 21300000, guid: 693f2a8e7fe16f545a95df53c4ae9ab7, type: 2}
+    - key: musical_2
+      sprite: {fileID: 21300000, guid: d807e3aa063bef34f8fdb5ca643233cb, type: 2}
+    - key: musical_3
+      sprite: {fileID: 21300000, guid: d87b96164a80cdc4d8bc55b6ffe692f6, type: 2}
+    - key: flowercrafting_0
+      sprite: {fileID: 21300000, guid: a678c93bd00fd9a46a60946cb43903a1, type: 2}
+    - key: flowercrafting_1
+      sprite: {fileID: 21300000, guid: 515294233f619534397d15eb479c419d, type: 2}
+    - key: flowercrafting_2
+      sprite: {fileID: 21300000, guid: 35cddbfac92394a449fa7bdacadcf652, type: 2}
+    - key: flowercrafting_3
+      sprite: {fileID: 21300000, guid: 46c9234311f4cd8468809b60fd69723e, type: 2}
+    - key: picnic_0
+      sprite: {fileID: 21300000, guid: 94caa0979f488ad40b45a76817356930, type: 2}
+    - key: picnic_1
+      sprite: {fileID: 21300000, guid: 3493e1b6ddbbb37488970df07cd09815, type: 2}
+    - key: picnic_2
+      sprite: {fileID: 21300000, guid: 63f2e309e2941bf4fb910c140ded9fde, type: 2}
+    - key: picnic_3
+      sprite: {fileID: 21300000, guid: 7fc2c155f6d355744bcb74e66963e921, type: 2}
+    - key: beach_0
+      sprite: {fileID: 21300000, guid: efc3b0525096c514fb374a8bd7fae06e, type: 2}
+    - key: beach_1
+      sprite: {fileID: 21300000, guid: a90c8d0167a202b42af6bade0703f4a3, type: 2}
+    - key: beach_2
+      sprite: {fileID: 21300000, guid: 693d3d0c4351edf49a8d99c3d42144af, type: 2}
+    - key: beach_3
+      sprite: {fileID: 21300000, guid: 46205f3aeb0b88d4890a64f214075d10, type: 2}
+    - key: library_0
+      sprite: {fileID: 21300000, guid: afc0a29dca1c81e4f9034e6f60c62af7, type: 2}
+    - key: library_1
+      sprite: {fileID: 21300000, guid: 8adbbddaed3570545a37fa2cd166d33c, type: 2}
+    - key: library_2
+      sprite: {fileID: 21300000, guid: 422b0844caace1b4eb3bd7c351f687bb, type: 2}
+    - key: library_3
+      sprite: {fileID: 21300000, guid: c98e1103d6d00bd4e8e6b4f265adfea2, type: 2}
+    - key: garden_0
+      sprite: {fileID: 21300000, guid: b925ac20f4b39fd418cd61d105028b21, type: 2}
+    - key: garden_1
+      sprite: {fileID: 21300000, guid: 2f8c1cbddeadec14ca8f7129746eb17b, type: 2}
+    - key: garden_2
+      sprite: {fileID: 21300000, guid: bd053c86e82340c48a8516de6b46fc88, type: 2}
+    - key: garden_3
+      sprite: {fileID: 21300000, guid: 5606173dff1f57641a6aff7c797e496e, type: 2}
+    - key: roomdecor_0
+      sprite: {fileID: 21300000, guid: 2fa668d3c3b27094eb20d09107344ff3, type: 2}
+    - key: roomdecor_1
+      sprite: {fileID: 21300000, guid: 13035f23c508725419e766850f760f17, type: 2}
+    - key: roomdecor_2
+      sprite: {fileID: 21300000, guid: 436503edeb538e148b9c82ff16f4448a, type: 2}
+    - key: roomdecor_3
+      sprite: {fileID: 21300000, guid: 078c2c910c351cf48b09c7ecdf132bfb, type: 2}
+    - key: tinygadgets_0
+      sprite: {fileID: 21300000, guid: dfa7459d9831618449e3999e2176be0f, type: 2}
+    - key: tinygadgets_1
+      sprite: {fileID: 21300000, guid: 4b5d5d51d0389af489d142b21c9c0e33, type: 2}
+    - key: tinygadgets_2
+      sprite: {fileID: 21300000, guid: 0c596c7655eb0644b9ac94cff14ef970, type: 2}
+    - key: tinygadgets_3
+      sprite: {fileID: 21300000, guid: 9e69022e3ab5952409ff510e7d22d231, type: 2}
+  - group: NewFeature
+    data:
+    - key: new_feature_glow_walk
+      sprite: {fileID: 21300000, guid: 87ff7b2c6e99cf141b8777f086b74d75, type: 2}
+    - key: new_feature_collection
+      sprite: {fileID: 21300000, guid: 4f9b23e839eab9741811b1b7f6728b9c, type: 2}
+    - key: new_feature_hidden_emple
+      sprite: {fileID: 21300000, guid: 662eee486ec464e458932f49dd5798a0, type: 2}
+    - key: new_feature_piggy_bank
+      sprite: {fileID: 21300000, guid: b42750a864a7fbe4c82557f647ed9ad3, type: 2}
+    - key: new_feature_play_pass
+      sprite: {fileID: 21300000, guid: 6d1b2d1dbdc800b4fbc61cf9d00a38d4, type: 2}
+  - group: EndedFeature
+    data:
+    - key: ended_play_pass
+      sprite: {fileID: 21300000, guid: aa50b76e6b45acb43b12e9ddb09a1209, type: 2}
+  - group: RewardIcon
+    data:
+    - key: gold_reward_1
+      sprite: {fileID: 21300000, guid: 9ce82953a56d91944b3de069bdd84914, type: 2}
+    - key: gold_reward_2
+      sprite: {fileID: 21300000, guid: 7a21d5739f226ad45b945fb26a3de6a0, type: 2}
+    - key: gold_reward_3
+      sprite: {fileID: 21300000, guid: a597f146cac5f564cb39a5ff9b12b381, type: 2}
+    - key: gold_reward_4
+      sprite: {fileID: 21300000, guid: 15ed7ca46a186164a8c2cc5f7b056f11, type: 2}
+    - key: gold_reward_5
+      sprite: {fileID: 21300000, guid: ae31f02ec40764844ae639b6ba50d01e, type: 2}
+    - key: gold_reward_6
+      sprite: {fileID: 21300000, guid: 73a370eecd8f80f4f892b3023e578879, type: 2}
+    - key: rock_reward
+      sprite: {fileID: 21300000, guid: 460133f97d554ab45a5ac5898817977e, type: 2}
+    - key: diamond_reward
+      sprite: {fileID: 21300000, guid: 4ad2212fd1e33c041b5f20a382672080, type: 2}
+    - key: extra_gold_reward
+      sprite: {fileID: 21300000, guid: 242d8a11805858d4c942fad038dccfa6, type: 2}
+    - key: extra_diamond_reward
+      sprite: {fileID: 21300000, guid: 9f2af86865c824f44b59df070dc7df57, type: 2}
+    - key: dynamite_reward
+      sprite: {fileID: 21300000, guid: ef6523073f8e1f347af01a4a9298ac7e, type: 2}
+    - key: remove_ad_reward
+      sprite: {fileID: 21300000, guid: f2c82cfc3a97f4c44a51fb52ddb1f003, type: 2}
+    - key: pickaxe
+      sprite: {fileID: 21300000, guid: 3ece648d3a4457f4da41491672f7ffef, type: 2}
+    - key: playpass_key
+      sprite: {fileID: 21300000, guid: 75824d0fcbdd74141997208cf6c06b55, type: 2}

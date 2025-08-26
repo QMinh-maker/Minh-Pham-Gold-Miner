@@ -1,0 +1,228 @@
+{
+  "name": "level10.2",
+  "items": [
+    {
+      "endPoint": [
+        -2.5451,
+        -1.97753429
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.4549,
+        -1.97753429
+      ]
+    },
+    {
+      "endPoint": [
+        -2.51509976,
+        -4.09
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.48490024,
+        -4.09
+      ]
+    },
+    {
+      "endPoint": [
+        2.5349,
+        -4.23761463
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.4651,
+        -4.23761463
+      ]
+    },
+    {
+      "endPoint": [
+        2.47420669,
+        -3.086253
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.52579331,
+        -3.086253
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        1.5849,
+        -1.47
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.7151,
+        -4.98
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.3649,
+        -4.99
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.3349,
+        -2.03
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -1.7351,
+        -1.5
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -1.32509983,
+        -2.53
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.7651,
+        -2.03
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -0.1551,
+        -1.35
+      ]
+    },
+    {
+      "itemTag": "Skull",
+      "position": [
+        2.5849,
+        -0.440000057
+      ]
+    },
+    {
+      "itemTag": "Bone",
+      "position": [
+        0.7149,
+        -3.46
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        1.5649,
+        -6.7
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -1.6251,
+        -6.68000031
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.1751,
+        -2.92
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.4451,
+        -2.32
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        2.5149,
+        -1.19
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.1751,
+        -5.66
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -2.5151,
+        -4.47000027
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -2.5451,
+        -1.19
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.1849,
+        -2.17
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        1.51490009,
+        -3.21
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -2.7451,
+        -6.19
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -1.6751,
+        -0.5899999
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.4451,
+        -5.12
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.1449,
+        -4.73
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        2.4649,
+        -4.02
+      ]
+    }
+  ]
+}

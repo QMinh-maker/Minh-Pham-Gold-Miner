@@ -1,0 +1,148 @@
+{
+  "pickaxeDefault": 2,
+  "pickaxeMax": 190,
+  "datas": [
+    {
+      "target": 1,
+      "numOfColum": 4,
+      "rewards": [
+        {
+          "itemTag": "Gold",
+          "value": 200
+        },
+        {
+          "itemTag": "Dynamite",
+          "value": 1
+        },
+        {
+          "itemTag": "LuckyTicket",
+          "value": 1
+        }
+      ],
+      "mapData": [
+        [
+          "1_1x2_blue_vertical", "3_1x3_yellow_vertical", "", "",
+          "1_1x2_blue_vertical", "3_1x3_yellow_vertical", "", "",
+          "2_1x2_blue_vertical", "3_1x3_yellow_vertical", "4_2x2_green_horizontal", "4_2x2_green_horizontal",
+          "2_1x2_blue_vertical", "", "4_2x2_green_horizontal", "4_2x2_green_horizontal"
+        ]
+      ]
+    },{
+      "target": 2,
+      "numOfColum": 5,
+      "rewards": [
+        {
+          "itemTag": "Gold",
+          "value": 350
+        },
+        {
+          "itemTag": "Dynamite",
+          "value": 2
+        },
+        {
+          "itemTag": "LuckyTicket",
+          "value": 2
+        }
+      ],
+      "mapData": [
+        [
+          "1_1x2_yellow_vertical", "4_1x3_green_vertical", "5_2x3_blue_horizontal", "5_2x3_blue_horizontal","5_2x3_blue_horizontal",
+          "1_1x2_yellow_vertical", "4_1x3_green_vertical", "5_2x3_blue_horizontal", "5_2x3_blue_horizontal","5_2x3_blue_horizontal",
+          "2_1x2_yellow_vertical", "4_1x3_green_vertical", "", "","",
+          "2_1x2_yellow_vertical", "", "", "","",
+          "3_1x3_green_horizontal", "3_1x3_green_horizontal", "3_1x3_green_horizontal", "",""
+        ]
+      ]
+    },{
+      "target": 3,
+      "numOfColum": 6,
+      "rewards": [
+        {
+          "itemTag": "Gold",
+          "value": 600
+        },
+        {
+          "itemTag": "LuckyTicket",
+          "value": 3
+        },
+        {
+          "itemTag": "Dynamite",
+          "value": 3
+        }
+      ],
+      "mapData": [
+        [
+          "1_1x2_red_vertical", "3_1x3_pink_vertical", "", "5_2x3_blue_horizontal","5_2x3_blue_horizontal","5_2x3_blue_horizontal",
+          "1_1x2_red_vertical", "3_1x3_pink_vertical", "", "5_2x3_blue_horizontal","5_2x3_blue_horizontal","5_2x3_blue_horizontal",
+          "2_1x3_pink_vertical", "3_1x3_pink_vertical", "", "","","",
+          "2_1x3_pink_vertical", "4_2x2_green_horizontal", "4_2x2_green_horizontal", "","","",
+          "2_1x3_pink_vertical", "4_2x2_green_horizontal", "4_2x2_green_horizontal", "6_2x3_yellow_horizontal","6_2x3_yellow_horizontal","6_2x3_yellow_horizontal",
+          "", "", "", "6_2x3_yellow_horizontal","6_2x3_yellow_horizontal","6_2x3_yellow_horizontal"
+        ]
+      ]
+    },
+    {
+      "target": 4,
+      "numOfColum": 7,
+      "rewards": [
+        {
+          "itemTag": "Gold",
+          "value": 950
+        },
+        {
+          "itemTag": "LuckyTicket",
+          "value": 4
+        },
+        {
+          "itemTag": "Dynamite",
+          "value": 4
+        }
+      ],
+      "mapData": [
+        [
+          "5_2x2_red_horizontal", "5_2x2_red_horizontal", "4_2x2_red_horizontal", "4_2x2_red_horizontal","7_3x3_red_horizontal","7_3x3_red_horizontal","7_3x3_red_horizontal",
+          "5_2x2_red_horizontal", "5_2x2_red_horizontal", "4_2x2_red_horizontal", "4_2x2_red_horizontal","7_3x3_red_horizontal","7_3x3_red_horizontal","7_3x3_red_horizontal",
+          "", "", "", "","7_3x3_red_horizontal","7_3x3_red_horizontal","7_3x3_red_horizontal",
+          "1_1x2_blue_horizontal", "1_1x2_blue_horizontal", "", "3_1x4_green_horizontal","3_1x4_green_horizontal","3_1x4_green_horizontal","3_1x4_green_horizontal",
+          "", "", "", "","","6_2x3_yellow_vertical","6_2x3_yellow_vertical",
+          "2_1x4_green_horizontal", "2_1x4_green_horizontal", "2_1x4_green_horizontal", "2_1x4_green_horizontal","","6_2x3_yellow_vertical","6_2x3_yellow_vertical",
+          "", "", "", "","","6_2x3_yellow_vertical","6_2x3_yellow_vertical"
+        ]
+      ]
+    },
+    {
+      "target": 5,
+      "numOfColum": 8,
+      "rewards": [
+        {
+          "itemTag": "Gold",
+          "value": 1450
+        },
+        {
+          "itemTag": "Dynamite",
+          "value": 5
+        },
+        {
+          "itemTag": "LuckyTicket",
+          "value": 5
+        },
+        {
+          "itemTag": "Skin",
+          "value": 9
+        }
+      ],
+      "mapData": [
+        [
+          "6_1x5_red_horizontal", "6_1x5_red_horizontal", "6_1x5_red_horizontal", "6_1x5_red_horizontal","6_1x5_red_horizontal","","7_2x4_yellow_vertical","7_2x4_yellow_vertical",
+          "", "5_1x5_red_horizontal", "5_1x5_red_horizontal", "5_1x5_red_horizontal","5_1x5_red_horizontal","5_1x5_red_horizontal","7_2x4_yellow_vertical","7_2x4_yellow_vertical",
+          "", "", "", "3_1x3_blue_vertical","","","7_2x4_yellow_vertical","7_2x4_yellow_vertical",
+          "2_1x2_green_vertical", "", "", "3_1x3_blue_vertical","","","7_2x4_yellow_vertical","7_2x4_yellow_vertical",
+          "2_1x2_green_vertical", "", "", "3_1x3_blue_vertical","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal",
+          "", "", "4_1x3_blue_vertical", "","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal",
+          "1_1x2_green_vertical", "", "4_1x3_blue_vertical", "","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal",
+          "1_1x2_green_vertical", "", "4_1x3_blue_vertical", "","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal","8_4x4_pink_horizontal"
+        ]
+      ]
+    }
+  ]
+}

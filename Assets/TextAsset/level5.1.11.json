@@ -1,0 +1,132 @@
+{
+  "name": "level5.1",
+  "items": [
+    {
+      "itemTag": "Gold250",
+      "position": [
+        -0.6651,
+        -4.54
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -1.0551,
+        -5.85
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        0.2049,
+        -1.34
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.7451,
+        -3.2
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        0.5849,
+        -3.08
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5551,
+        -4.83
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.4449,
+        -4.83
+      ]
+    },
+    {
+      "endPoint": [
+        2.5349,
+        -2.650572
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4651,
+        -2.650572
+      ]
+    },
+    {
+      "endPoint": [
+        2.5249,
+        -4.057792
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4751,
+        -4.057792
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -2.1851,
+        -1.31000006
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        1.5049,
+        -2.07
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -1.1951,
+        -1.83
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        1.2049,
+        -6.34
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        2.4349,
+        -3.87
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.5649,
+        -7.25
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -2.1151,
+        -5.84
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        1.3149,
+        -4.09
+      ]
+    }
+  ]
+}

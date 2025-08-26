@@ -1,0 +1,122 @@
+[
+  {
+    "Mission": 1,
+    "Target": 3,
+    "GoldBar": 150,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 2,
+    "Target": 5,
+    "GoldBar": 0,
+    "Ticket": 0,
+    "Dynamite": 2,
+    "Chest": ""
+  },
+  {
+    "Mission": 3,
+    "Target": 7,
+    "GoldBar": 0,
+    "Ticket": 2,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 4,
+    "Target": 9,
+    "GoldBar": 300,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 5,
+    "Target": 11,
+    "GoldBar": 500,
+    "Ticket": 3,
+    "Dynamite": 3,
+    "Chest": "CopperChest"
+  },
+  {
+    "Mission": 6,
+    "Target": 13,
+    "GoldBar": 600,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 7,
+    "Target": 15,
+    "GoldBar": 0,
+    "Ticket": 0,
+    "Dynamite": 5,
+    "Chest": ""
+  },
+  {
+    "Mission": 8,
+    "Target": 17,
+    "GoldBar": 0,
+    "Ticket": 4,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 9,
+    "Target": 19,
+    "GoldBar": 800,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 10,
+    "Target": 21,
+    "GoldBar": 1000,
+    "Ticket": 5,
+    "Dynamite": 5,
+    "Chest": "SilverChest"
+  },
+  {
+    "Mission": 11,
+    "Target": 23,
+    "GoldBar": 1200,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 12,
+    "Target": 25,
+    "GoldBar": 0,
+    "Ticket": 0,
+    "Dynamite": 8,
+    "Chest": ""
+  },
+  {
+    "Mission": 13,
+    "Target": 27,
+    "GoldBar": 0,
+    "Ticket": 8,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 14,
+    "Target": 29,
+    "GoldBar": 1500,
+    "Ticket": 0,
+    "Dynamite": 0,
+    "Chest": ""
+  },
+  {
+    "Mission": 15,
+    "Target": 31,
+    "GoldBar": 2000,
+    "Ticket": 8,
+    "Dynamite": 8,
+    "Chest": "GoldChest"
+  }
+]

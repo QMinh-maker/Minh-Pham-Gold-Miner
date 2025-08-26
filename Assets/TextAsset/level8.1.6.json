@@ -1,0 +1,180 @@
+{
+  "name": "level8.1",
+  "items": [
+    {
+      "itemTag": "Gold500",
+      "position": [
+        0.5549,
+        -6.41
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        2.3949,
+        -4.21
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -0.195100009,
+        -3.71
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -2.1151,
+        -4.5
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -2.0251,
+        -6.13
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        2.2149,
+        -6.48
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.3349,
+        -1.99
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.5349,
+        -5.46
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.6651,
+        -6.52999973
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.91490006,
+        -1.74
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.2651,
+        -1.8499999
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -0.0350999832,
+        -2.40999985
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        1.3549,
+        -0.8599999
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        2.38489985,
+        -0.329999924
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        0.894899964,
+        -2.73
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -2.3151,
+        -3.34
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -0.02509999,
+        -1.21999991
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -2.2051,
+        -2.31
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        2.2949,
+        -3.05
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        1.3649,
+        -5.16
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        0.9522569,
+        -1.7243191
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -1.1551,
+        -5.18000031
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -2.2251,
+        -1.4
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -1.09509993,
+        -0.8499999
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -2.3251,
+        -0.6500001
+      ]
+    }
+  ]
+}

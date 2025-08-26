@@ -1,0 +1,77 @@
+{
+    "name": "level2.1",
+    "items": [
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -0.897100031,
+                -1.66699994
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                2.5549,
+                -2.05
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -0.0951,
+                -4.25999975
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                0.0248999987,
+                -3.04
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                -1.5351,
+                -3.0
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -2.4251,
+                -4.04999971
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                2.2549,
+                -4.2
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Rock",
+            "position": [
+                1.1249,
+                -2.38999987
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+  "name": "level5.2",
+  "items": [
+    {
+      "endPoint": [
+        -2.60510015,
+        -3.972329
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.39489985,
+        -3.972329
+      ]
+    },
+    {
+      "endPoint": [
+        -2.6151,
+        -2.99153924
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.3849,
+        -2.99153924
+      ]
+    },
+    {
+      "endPoint": [
+        2.5849,
+        -4.73
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4151,
+        -4.73
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -1.8451,
+        -3.23
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        0.424899936,
+        -5.84
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        0.4649,
+        -3.21
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        0.374899924,
+        -0.9000001
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        1.4649,
+        -3.24
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -2.2451,
+        -1.96
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        1.8449,
+        -4.43
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -1.7651,
+        -5.9
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        1.9949,
+        -0.960000038
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        2.4149,
+        -3.59
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -0.7051,
+        -4.48
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        0.6049,
+        -1.94
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        -2.5651,
+        -0.950000048
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "PointTarget": 5000,
+    "Gold": 300,
+    "Dynamite": 0,
+    "Ticket": 1,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 6000,
+    "Gold": 400,
+    "Dynamite": 1,
+    "Ticket": 0,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 7200,
+    "Gold": 550,
+    "Dynamite": 0,
+    "Ticket": 2,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 10800,
+    "Gold": 750,
+    "Dynamite": 2,
+    "Ticket": 0,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 15800,
+    "Gold": 1000,
+    "Dynamite": 2,
+    "Ticket": 3,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 20800,
+    "Gold": 1300,
+    "Dynamite": 3,
+    "Ticket": 0,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 25800,
+    "Gold": 1600,
+    "Dynamite": 0,
+    "Ticket": 3,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 30800,
+    "Gold": 1600,
+    "Dynamite": 3,
+    "Ticket": 0,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 35800,
+    "Gold": 1600,
+    "Dynamite": 3,
+    "Ticket": 4,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 40800,
+    "Gold": 1600,
+    "Dynamite": 3,
+    "Ticket": 0,
+    "Skin": 0
+  },
+  {
+    "PointTarget": 45800,
+    "Gold": 1600,
+    "Dynamite": 3,
+    "Ticket": 4,
+    "Skin": 0
+  }
+]

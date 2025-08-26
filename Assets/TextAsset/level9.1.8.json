@@ -1,0 +1,210 @@
+{
+  "name": "level9.1",
+  "items": [
+    {
+      "endPoint": [
+        -2.54510021,
+        -0.72
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.45489979,
+        -0.72
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5951,
+        -1.5
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.4049,
+        -1.5
+      ]
+    },
+    {
+      "endPoint": [
+        2.4849,
+        -4.69
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.5151,
+        -4.69
+      ]
+    },
+    {
+      "endPoint": [
+        -2.4851,
+        -2.96
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.5149,
+        -2.96
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5151,
+        -7.14
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.4849,
+        -7.14
+      ]
+    },
+    {
+      "endPoint": [
+        2.5649,
+        -6.55
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.4351,
+        -6.55
+      ]
+    },
+    {
+      "endPoint": [
+        2.4749,
+        -4.06
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.5251,
+        -4.06
+      ]
+    },
+    {
+      "endPoint": [
+        2.5549,
+        -5.94
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.4451,
+        -5.94
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5951,
+        -3.65929079
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.4049,
+        -3.65929079
+      ]
+    },
+    {
+      "endPoint": [
+        -2.56510019,
+        -4.42686558
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.43489981,
+        -4.42686558
+      ]
+    },
+    {
+      "endPoint": [
+        2.4749,
+        -2.20942783
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.5251,
+        -2.20942783
+      ]
+    },
+    {
+      "endPoint": [
+        2.6049,
+        -5.38633347
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.3951,
+        -5.38633347
+      ]
+    },
+    {
+      "endPoint": [
+        2.5449,
+        -2.998324
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4551,
+        -2.998324
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        1.0449,
+        -3.29435921
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.1051,
+        -3.44
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        0.5749,
+        -1.6
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.2349,
+        -4.85
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.7951,
+        -6.09
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -0.7151,
+        -2.16
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -0.2351,
+        -4.63
+      ]
+    }
+  ]
+}

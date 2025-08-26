@@ -1,0 +1,102 @@
+[
+  {
+    "ID": 1,
+    "Miner": "Classic"
+  },
+  {
+    "ID": 2,
+    "Miner": "Deluxe"
+  },
+  {
+    "ID": 3,
+    "Miner": "XuongRong"
+  },
+  {
+    "ID": 4,
+    "Miner": "Skeleton"
+  },
+  {
+    "ID": 5,
+    "Miner": "RedGirl"
+  },
+  {
+    "ID": 6,
+    "Miner": "Zombie"
+  },
+  {
+    "ID": 7,
+    "Miner": "Pirates"
+  },
+  {
+    "ID": 8,
+    "Miner": "Viking"
+  },
+  {
+    "ID": 9,
+    "Miner": "DarkLord"
+  },
+  {
+    "ID": 10,
+    "Miner": "Hakan"
+  },
+  {
+    "ID": 11,
+    "Miner": "Ariana"
+  },
+  {
+    "ID": 12,
+    "Miner": "Songjooki"
+  },
+  {
+    "ID": 13,
+    "Miner": "Taylor"
+  },
+  {
+    "ID": 14,
+    "Miner": "SonTung"
+  },
+  {
+    "ID": 15,
+    "Miner": "MuayThai"
+  },
+  {
+    "ID": 16,
+    "Miner": "Samurai"
+  },
+  {
+    "ID": 17,
+    "Miner": "Songoku"
+  },
+  {
+    "ID": 18,
+    "Miner": "Michael"
+  },
+  {
+    "ID": 19,
+    "Miner": "Matryoshaka"
+  },
+  {
+    "ID": 20,
+    "Miner": "Thor"
+  },
+  {
+    "ID": 21,
+    "Miner": "Monkey"
+  },
+  {
+    "ID": 22,
+    "Miner": "IronMan"
+  },
+  {
+    "ID": 23,
+    "Miner": "SpiderMan"
+  },
+  {
+    "ID": 24,
+    "Miner": "BatMan"
+  },
+  {
+    "ID": 25,
+    "Miner": "SuperMan"
+  }
+]

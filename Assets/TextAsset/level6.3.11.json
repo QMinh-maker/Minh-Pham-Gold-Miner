@@ -1,0 +1,174 @@
+{
+  "name": "level6.3",
+  "items": [
+    {
+      "endPoint": [
+        2.48949265,
+        -1.11110413
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.51050735,
+        -1.11110413
+      ]
+    },
+    {
+      "endPoint": [
+        2.5649,
+        -3.179291
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4351,
+        -3.179291
+      ]
+    },
+    {
+      "endPoint": [
+        2.5249,
+        -4.927655
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4751,
+        -4.927655
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        -1.76425409,
+        -6.164303
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        0.8449,
+        -1.75000012
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        0.5849,
+        -3.28000021
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -0.676856756,
+        -3.754972
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -0.985100031,
+        -0.75
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        0.7849,
+        -0.470000267
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        1.8749001,
+        -1.54000008
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -0.5251,
+        -1.56000006
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.80689716,
+        -4.479903
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.2449,
+        -3.46
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        1.5449,
+        -5.99000025
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        1.7549,
+        -2.36000013
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        0.197325468,
+        -4.30933142
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -1.84509993,
+        -1.96
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -0.69509995,
+        -2.66
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        2.22286963,
+        -5.35408545
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.6149,
+        -5.64000034
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.7751,
+        -5.7
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.0651,
+        -6.14000034
+      ]
+    }
+  ]
+}

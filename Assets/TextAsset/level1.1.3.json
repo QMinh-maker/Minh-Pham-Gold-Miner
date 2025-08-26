@@ -1,0 +1,95 @@
+{
+    "name": "level1.1",
+    "items": [
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -2.1151,
+                -2.89
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "TreasuryBag",
+            "position": [
+                2.3349,
+                -3.01
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                0.2749,
+                -2.54
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                0.3949,
+                -4.41
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Skull",
+            "position": [
+                -2.3251,
+                -1.56
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                2.2649,
+                -4.13
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "TreasuryBag",
+            "position": [
+                -1.3651,
+                -1.65
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -0.6251,
+                -3.63
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -1.3151,
+                -4.89
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                1.7649,
+                -1.66999984
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        }
+    ]
+}

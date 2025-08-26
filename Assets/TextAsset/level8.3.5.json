@@ -1,0 +1,137 @@
+{
+  "name": "level8.3",
+  "items": [
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.335100055,
+        -5.15
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.2349,
+        -2.0
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -2.0551002,
+        -2.53
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -1.1051,
+        -2.53
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        1.10489988,
+        -5.59
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        1.48489988,
+        -4.06
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.45489991,
+        -6.31
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.10510015,
+        -5.29
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        2.39489985,
+        -4.34
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -0.1551,
+        -3.18
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -1.56510019,
+        -4.11
+      ]
+    },
+    {
+      "endPoint": [
+        -2.4751,
+        -3.366033
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.5249,
+        -3.366033
+      ]
+    },
+    {
+      "endPoint": [
+        -2.4251,
+        -1.866033
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.5749,
+        -1.866033
+      ]
+    },
+    {
+      "endPoint": [
+        -2.7251,
+        -5.616033
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        2.2749,
+        -5.616033
+      ]
+    },
+    {
+      "endPoint": [
+        2.3949,
+        -6.74
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.6051,
+        -6.74
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        0.4449,
+        -4.58
+      ]
+    }
+  ]
+}

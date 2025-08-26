@@ -1,0 +1,115 @@
+{
+  "name": "level7.2",
+  "items": [
+    {
+      "endPoint": [
+        2.5249,
+        -3.07
+      ],
+      "speed": 0.8,
+      "itemTag": "MouseDiamond",
+      "position": [
+        -2.4751,
+        -3.07
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        0.3949,
+        -3.84
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        1.3649,
+        -1.84
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        2.01490021,
+        -5.88
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -1.37509978,
+        -5.48
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -2.2851,
+        -2.89775181
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        0.4149,
+        -2.25
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        -1.2351,
+        -3.92
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        2.1449,
+        -1.42
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        1.39490008,
+        -4.19836426
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.327033877,
+        -5.41369
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -1.6351,
+        -2.27
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -2.3151,
+        -5.29
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        -0.6551,
+        -1.73
+      ]
+    },
+    {
+      "itemTag": "Stone",
+      "position": [
+        0.4249,
+        -5.52999973
+      ]
+    }
+  ]
+}

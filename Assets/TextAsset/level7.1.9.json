@@ -1,0 +1,165 @@
+{
+  "name": "level7.1",
+  "items": [
+    {
+      "endPoint": [
+        -2.5551,
+        -3.30664778
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.4449,
+        -3.30664778
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5951,
+        -1.409033
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.4049,
+        -1.409033
+      ]
+    },
+    {
+      "endPoint": [
+        2.5149,
+        -0.7693877
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4851,
+        -0.7693877
+      ]
+    },
+    {
+      "endPoint": [
+        -2.5751,
+        -4.84
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.4249,
+        -4.84
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        -0.7051,
+        -4.23
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        0.6049,
+        -2.96
+      ]
+    },
+    {
+      "itemTag": "Gold250",
+      "position": [
+        -1.9551,
+        -3.85
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        1.7649,
+        -6.17
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        1.86489987,
+        -4.46
+      ]
+    },
+    {
+      "itemTag": "Gold500",
+      "position": [
+        -1.9151,
+        -5.92
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -0.47510004,
+        -1.15999985
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -1.5451,
+        -1.39999986
+      ]
+    },
+    {
+      "itemTag": "TreasuryBag",
+      "position": [
+        0.7449,
+        -5.08
+      ]
+    },
+    {
+      "itemTag": "Tnt",
+      "position": [
+        2.0349,
+        -3.11
+      ]
+    },
+    {
+      "itemTag": "Skull",
+      "position": [
+        0.234899938,
+        -1.77
+      ]
+    },
+    {
+      "itemTag": "Skull",
+      "position": [
+        -1.5251,
+        -2.29
+      ]
+    },
+    {
+      "itemTag": "Bone",
+      "position": [
+        1.4849,
+        -1.41
+      ]
+    },
+    {
+      "itemTag": "Bone",
+      "position": [
+        -2.3351,
+        -2.47
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        0.004899999,
+        -3.72
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        2.8149,
+        -2.8
+      ]
+    }
+  ]
+}

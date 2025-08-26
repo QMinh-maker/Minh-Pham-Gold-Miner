@@ -1,0 +1,125 @@
+{
+  "name": "level2.3",
+  "items": [
+    {
+      "itemTag": "Stone",
+      "position": [
+        1.5649,
+        -3.94
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -1.26509988,
+        -3.01
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        1.16300631,
+        -3.28964543
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        1.2349,
+        -2.4
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        1.12036335,
+        -5.03800964
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        1.6149,
+        -6.77
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        0.0116444845,
+        -5.805584
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.82510006,
+        -6.13
+      ]
+    },
+    {
+      "itemTag": "Gold50",
+      "position": [
+        -1.21509993,
+        -4.79
+      ]
+    },
+    {
+      "itemTag": "Gold100",
+      "position": [
+        -1.26509988,
+        -1.8900001
+      ]
+    },
+    {
+      "endPoint": [
+        -2.6051,
+        -3.8013618
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        2.3949,
+        -3.8013618
+      ]
+    },
+    {
+      "endPoint": [
+        2.47489977,
+        -4.846116
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.52510023,
+        -4.846116
+      ]
+    },
+    {
+      "endPoint": [
+        2.5849,
+        -2.607357
+      ],
+      "speed": 0.8,
+      "itemTag": "Mouse",
+      "position": [
+        -2.4151,
+        -2.607357
+      ]
+    },
+    {
+      "itemTag": "Diamond",
+      "position": [
+        -0.9251,
+        -5.92
+      ]
+    },
+    {
+      "itemTag": "Rock",
+      "position": [
+        -0.135099992,
+        -4.06
+      ]
+    }
+  ]
+}

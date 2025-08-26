@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12acaab92db3199f36abceece76a030, type: 3}
+  m_Name: AssetsSpine
+  m_EditorClassIdentifier:
+  sdaChar1: {fileID: 11400000, guid: 12ff9ddc9a265614c822f453b53cf0e2, type: 2}
+  sdaChar2: {fileID: 11400000, guid: 03af32aaaf3c4d34bb36dc59c575d61e, type: 2}
+  sdaChar3: {fileID: 11400000, guid: 5360bbe80511c854490d5ece6ebf6dc2, type: 2}
+  sdaClassic: {fileID: 11400000, guid: 03c38b20f2b15444dae7d8194806ae20, type: 2}

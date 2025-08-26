@@ -1,0 +1,2 @@
+file_Name,difficulty,gold_value
+level7.3.11,11,3654

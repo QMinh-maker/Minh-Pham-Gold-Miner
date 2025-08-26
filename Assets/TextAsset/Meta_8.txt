@@ -1,0 +1,2 @@
+file_Name,difficulty,gold_value
+level8.2.4,4,5052

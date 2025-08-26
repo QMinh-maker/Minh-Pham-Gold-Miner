@@ -1,0 +1,42 @@
+Safe.png
+size:2048,1024
+filter:Linear,Linear
+pma:true
+Base front
+bounds:2,401,602,616
+Door close
+bounds:606,639,347,378
+base behind
+bounds:2,5,394,420
+rotate:90
+coin1
+bounds:1068,514,122,91
+rotate:90
+coin2
+bounds:942,426,100,121
+rotate:90
+coin3
+bounds:942,528,124,108
+coins1
+bounds:955,701,407,316
+coins2
+bounds:1364,706,356,311
+door close2
+bounds:606,442,181,195
+door open1
+bounds:424,2,227,397
+door open2
+bounds:955,638,61,193
+rotate:90
+gear 1
+bounds:1722,721,40,65
+rotate:90
+gear 2
+bounds:1150,659,40,65
+rotate:90
+glow2
+bounds:1722,763,254,320
+rotate:90
+glowing
+bounds:789,424,213,151
+rotate:90

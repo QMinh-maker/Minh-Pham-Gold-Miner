@@ -1,0 +1,86 @@
+{
+    "name": "level3.3",
+    "items": [
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -2.4051,
+                -3.6
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                2.0449,
+                -4.29999971
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -2.0851,
+                -2.38999987
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                2.0249,
+                -2.38999987
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -0.6951,
+                -4.35
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                -0.0101000005,
+                -1.60399985
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                0.6749,
+                -3.501
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "TreasuryBag",
+            "position": [
+                0.9149,
+                -2.25
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Rock",
+            "position": [
+                -0.5851,
+                -2.68999982
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        }
+    ]
+}

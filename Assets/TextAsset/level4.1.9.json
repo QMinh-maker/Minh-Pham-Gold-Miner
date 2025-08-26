@@ -1,0 +1,104 @@
+{
+    "name": "level4.1",
+    "items": [
+        {
+            "itemTag": "Gold500",
+            "position": [
+                -0.9451,
+                -4.64
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold500",
+            "position": [
+                1.8549,
+                -3.54
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                1.3749,
+                -1.41999984
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                2.5949,
+                -2.16999984
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                0.0749,
+                -3.50999975
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold250",
+            "position": [
+                -2.1951,
+                -3.73999977
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                -0.2851,
+                -2.48999977
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold100",
+            "position": [
+                -1.6151,
+                -2.43999982
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Gold50",
+            "position": [
+                -0.9151,
+                -1.8599999
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Bone",
+            "position": [
+                1.4449,
+                -2.5
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        },
+        {
+            "itemTag": "Skull",
+            "position": [
+                -2.6651,
+                -2.72999978
+            ],
+            "endPoint": null,
+            "speed": 0.0
+        }
+    ]
+}
