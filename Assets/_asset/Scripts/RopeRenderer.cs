@@ -19,11 +19,6 @@ public class RopeRenderer : MonoBehaviour
 
         lineRenderer.enabled = false;
     }
-    void Start()
-    {
-        
-    }
-
     public void RenderLine(Vector3 endPosition, bool enableRenderer)
     {
         if (enableRenderer)
@@ -45,18 +40,15 @@ public class RopeRenderer : MonoBehaviour
         if (lineRenderer.enabled)
         {
             Vector3 temp = startPosition.position;
-            temp.z = 0f;
+            temp.z = -10f;
 
             startPosition.position = temp;
 
             temp = endPosition;
             temp.z = 0f;
             endPosition = temp;
-            lineRenderer.SetPosition(0,startPosition.position);
+            lineRenderer.SetPosition(0, startPosition.position);
             lineRenderer.SetPosition(1, endPosition);
         }
-
-
-
     }
 }

@@ -18,6 +18,13 @@ public class HookMovement : MonoBehaviour
     private float initial_Y;
 
     private bool moveDown;
+    private RopeRenderer ropeRenderer;
+
+    private void Awake()
+    {
+        ropeRenderer = GetComponent<RopeRenderer>();
+    }
+
 
     void Start()
     {
@@ -98,9 +105,10 @@ public class HookMovement : MonoBehaviour
             if (temp.y >= initial_Y)
             {
                 canRotate = true;
-
+                ropeRenderer.RenderLine(temp, false);
                 move_speed = initial_move_speed;
             }
+            ropeRenderer.RenderLine(transform.position, true);
 
         }
 
