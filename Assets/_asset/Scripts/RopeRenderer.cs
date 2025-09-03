@@ -9,7 +9,7 @@ public class RopeRenderer : MonoBehaviour
 
     [SerializeField] private Transform startPosition;
 
-    private float Line_width = 0.05f;
+    private float Line_width = 5f;
 
     private void Awake()
     {
@@ -26,6 +26,7 @@ public class RopeRenderer : MonoBehaviour
             if (!lineRenderer.enabled)
             {
                 lineRenderer.enabled = true;
+                
             }
             lineRenderer.positionCount = 2;
         }
@@ -40,7 +41,7 @@ public class RopeRenderer : MonoBehaviour
         if (lineRenderer.enabled)
         {
             Vector3 temp = startPosition.position;
-            temp.z = -10f;
+            temp.z = -1f;
 
             startPosition.position = temp;
 
