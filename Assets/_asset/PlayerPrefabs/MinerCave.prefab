@@ -522,6 +522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalSpeed: 5
+  rope: {fileID: 4986617664480598781}
+  hookHead: {fileID: 1661708058303939811}
 --- !u!58 &4641408033224610315
 CircleCollider2D:
   m_ObjectHideFlags: 0

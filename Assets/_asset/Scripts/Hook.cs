@@ -1,44 +1,60 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Hook : MonoBehaviour
 {
     public float normalSpeed = 5f;     // tốc độ kéo bình thường
-    private float currentSpeed;        // tốc độ hiện tại (sẽ bị giảm khi kéo vật nặng)
-
+    private float currentSpeed;
     private bool isPulling = false;
-    private Transform player;          // nhân vật đào vàng
-    private Transform hookedItem;      // vật phẩm đang kéo
 
-    private int totalGold = 0;         // tổng số tiền người chơi có
+    private Transform player;          // Nhân vật Miner
+    private Transform hookedItem;      // Item đang dính
+
+    private int totalGold = 0;         // Tiền người chơi
+    public RopeRenderer rope;          // script vẽ dây
+    public Transform hookHead;         // đầu móc (gắn collider)
 
     void Start()
     {
-        player = GameObject.Find("Miner").transform; // Nhân vật phải đặt tên "Miner"
+        player = GameObject.Find("Miner").transform;
         currentSpeed = normalSpeed;
     }
 
     void Update()
     {
-        if (isPulling && hookedItem != null)
+        // Vẽ dây từ Miner tới Hook
+        rope.RenderLine(hookHead.position, true);
+
+        if (isPulling)
         {
-            // Kéo vật phẩm về phía Miner
-            hookedItem.position = Vector3.MoveTowards(hookedItem.position, player.position, currentSpeed * Time.deltaTime);
-            transform.position = Vector3.MoveTowards(transform.position, player.position, currentSpeed * Time.deltaTime);
+            // Thu hook về Miner
+            hookHead.position = Vector3.MoveTowards(
+                hookHead.position,
+                player.position,
+                currentSpeed * Time.deltaTime
+            );
 
-            // Nếu vật phẩm đã về tới Miner
-            if (Vector3.Distance(hookedItem.position, player.position) < 0.5f)
+            // Nếu có item dính thì nó đi theo hookHead
+            if (hookedItem != null)
             {
-                // Cộng tiền
-                Item item = hookedItem.GetComponent<Item>();
-                totalGold += item.value;
-                Debug.Log("Tiền hiện tại: " + totalGold);
+                hookedItem.position = hookHead.position;
+            }
 
-                // Hủy vật phẩm
-                Destroy(hookedItem.gameObject);
+            // Khi hookHead chạm Miner
+            if (Vector3.Distance(hookHead.position, player.position) < 0.5f)
+            {
+                if (hookedItem != null)
+                {
+                    Item item = hookedItem.GetComponent<Item>();
+                    totalGold += item.value;
+                    Debug.Log("Tiền hiện tại: " + totalGold);
 
-                // Reset lại móc
+                    Destroy(hookedItem.gameObject);
+                }
+
+                // Reset hook
                 hookedItem = null;
                 isPulling = false;
                 currentSpeed = normalSpeed;
@@ -51,9 +67,10 @@ public class Hook : MonoBehaviour
         if (!isPulling && collision.CompareTag("Item"))
         {
             hookedItem = collision.transform;
-            hookedItem.SetParent(transform);
 
-            // Lấy weight của vật phẩm để giảm tốc độ kéo
+            // Tắt collider để nó không va đẩy lung tung
+            collision.enabled = false;
+
             Item item = hookedItem.GetComponent<Item>();
             currentSpeed = normalSpeed / item.weight;
 
@@ -61,4 +78,3 @@ public class Hook : MonoBehaviour
         }
     }
 }
-
