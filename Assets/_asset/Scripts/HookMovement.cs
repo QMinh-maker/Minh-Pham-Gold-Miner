@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,21 +20,26 @@ public class HookMovement : MonoBehaviour
     private bool moveDown;
     private RopeRenderer ropeRenderer;
 
+    // Chiều dài tối đa của dây
+    public float maxRopeLength = 4.5f;
+
+    private Vector3 startPos;
+
     private void Awake()
     {
         ropeRenderer = GetComponent<RopeRenderer>();
     }
 
-
     void Start()
     {
         initial_Y = transform.position.y;
         initial_move_speed = move_speed;
-
         canRotate = true;
+
+        // Lưu lại điểm gốc (điểm neo dây)
+        startPos = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Rotate();
@@ -42,11 +47,11 @@ public class HookMovement : MonoBehaviour
         MoveRope();
     }
 
-
-    void Rotate ()
+    void Rotate()
     {
         if (!canRotate)
             return;
+
         if (rotate_right)
         {
             rotate_angle += rotate_speed * Time.deltaTime;
@@ -55,6 +60,7 @@ public class HookMovement : MonoBehaviour
         {
             rotate_angle -= rotate_speed * Time.deltaTime;
         }
+
         transform.rotation = Quaternion.AngleAxis(rotate_angle, Vector3.forward);
 
         if (rotate_angle >= max_Z)
@@ -65,54 +71,54 @@ public class HookMovement : MonoBehaviour
         {
             rotate_right = true;
         }
-
     }
 
     void GetInput()
     {
-        if (Input.GetMouseButtonDown(0)) { 
+        if (Input.GetMouseButtonDown(0))
+        {
             if (canRotate)
             {
                 canRotate = false;
                 moveDown = true;
             }
-        
         }
     }
-
 
     void MoveRope()
     {
         if (canRotate)
             return;
-        if (!canRotate)
+
+        Vector3 temp = transform.position;
+
+        if (moveDown)
         {
-            Vector3 temp = transform.position;
-            if (moveDown)
-            {
-                temp -= transform.up * Time.deltaTime * move_speed;
-            }
-            else
-            {
-                temp += transform.up * Time.deltaTime * move_speed;
-            }
-            transform.position = temp;
+            temp -= transform.up * Time.deltaTime * move_speed;
 
-            if (temp.y <= min_Y)
+            // Kiểm tra độ dài dây
+            float distance = Vector3.Distance(startPos, temp);
+            if (distance >= maxRopeLength)
             {
-                moveDown = false;
+                moveDown = false; // bắt đầu kéo lên
             }
-            if (temp.y >= initial_Y)
-            {
-                canRotate = true;
-                ropeRenderer.RenderLine(temp, false);
-                move_speed = initial_move_speed;
-            }
-            ropeRenderer.RenderLine(transform.position, true);
-
+        }
+        else
+        {
+            temp += transform.up * Time.deltaTime * move_speed;
         }
 
+        transform.position = temp;
 
+        // Nếu dây về tới vị trí ban đầu thì reset
+        if (temp.y >= initial_Y)
+        {
+            canRotate = true;
+            ropeRenderer.RenderLine(temp, false);
+            move_speed = initial_move_speed;
+        }
+
+        ropeRenderer.RenderLine(transform.position, true);
     }
 
 }
