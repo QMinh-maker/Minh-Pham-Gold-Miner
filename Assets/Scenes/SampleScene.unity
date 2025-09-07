@@ -4976,7 +4976,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 921247367, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: min_Y
-      value: 10
+      value: 17.42
       objectReference: {fileID: 0}
     - target: {fileID: 921247367, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: move_speed
@@ -5069,6 +5069,14 @@ PrefabInstance:
     - target: {fileID: 1661708058303939811, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618195604579518901, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.88112086
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618195604579518901, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4080325896009080763, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: m_LocalScale.x
