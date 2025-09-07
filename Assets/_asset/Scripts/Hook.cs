@@ -27,8 +27,7 @@ public class Hook : MonoBehaviour
     {
         // Vẽ dây từ Miner tới Hook
         rope.RenderLine(hookHead.position, true);
-        //Debug.Log("khoang cach Moc va Miner: " + Vector2.Distance(hookHead.position, player.position));
-
+        
         if (isPulling)
         {
             // Thu hook về Miner
@@ -42,7 +41,8 @@ public class Hook : MonoBehaviour
             // Nếu có item dính thì nó đi theo hookHead
             if (hookedItem != null)
             {
-                hookedItem.position = hookHead.position - hookHead.up * itemOffsetY;
+                hookedItem.position = hookHead.position - hookHead.up 
+                    * itemOffsetY;
                 Debug.Log("Keo thanh cong");
             }
 
