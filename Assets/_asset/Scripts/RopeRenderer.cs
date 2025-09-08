@@ -40,16 +40,24 @@ public class RopeRenderer : MonoBehaviour
         }
         if (lineRenderer.enabled)
         {
-            Vector3 temp = startPosition.position;
-            temp.z = -1f;
+            Vector3 startPos = startPosition.position;
+            startPos.z = -1f;
 
-            startPosition.position = temp;
+            Vector3 endPos = endPosition;
+            endPos.z = 0f;
 
-            temp = endPosition;
-            temp.z = 0f;
-            endPosition = temp;
-            lineRenderer.SetPosition(0, startPosition.position);
-            lineRenderer.SetPosition(1, endPosition);
+            lineRenderer.SetPosition(0, startPos);
+            lineRenderer.SetPosition(1, endPos);
+            //Vector3 temp = startPosition.position;
+            //temp.z = -1f;
+
+            //startPosition.position = temp;
+
+            //temp = endPosition;
+            //temp.z = 0f;
+            //endPosition = temp;
+            //lineRenderer.SetPosition(0, startPosition.position);
+            //lineRenderer.SetPosition(1, endPosition);
         }
     }
 }

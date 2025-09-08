@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
+using TMPro;
 
 public class Hook : MonoBehaviour
 {
@@ -17,16 +17,20 @@ public class Hook : MonoBehaviour
     public RopeRenderer rope;          // script vẽ dây
     public Transform hookHead;         // đầu móc (gắn collider)
 
+    [SerializeField] private TextMeshProUGUI scoreText; // tham chiếu đến UI
+
     void Start()
     {
         player = GameObject.Find("Miner").transform;
         currentSpeed = normalSpeed;
+        UpdateScoreUI();
+
     }
 
     void Update()
     {
         // Vẽ dây từ Miner tới Hook
-        rope.RenderLine(hookHead.position, true);
+        
         
         if (isPulling)
         {
@@ -36,14 +40,15 @@ public class Hook : MonoBehaviour
                 player.position,
                 currentSpeed * Time.deltaTime
             );
-            Debug.Log("dang keo ve");
+            rope.RenderLine(hookHead.position, false);
+
 
             // Nếu có item dính thì nó đi theo hookHead
             if (hookedItem != null)
             {
                 hookedItem.position = hookHead.position - hookHead.up 
                     * itemOffsetY;
-                Debug.Log("Keo thanh cong");
+                
             }
 
             // Khi hookHead chạm Miner
@@ -57,7 +62,7 @@ public class Hook : MonoBehaviour
                     Debug.Log("Tiền hiện tại: " + totalGold);
                     
                     Destroy(hookedItem.gameObject);
-
+                    UpdateScoreUI(); // cập nhật điểm sau khi kéo xong
                 }
 
                 // Reset hook
@@ -74,6 +79,7 @@ public class Hook : MonoBehaviour
     {
         if (!isPulling && collision.CompareTag("Item"))
         {
+            rope.RenderLine(hookHead.position, true);
             hookedItem = collision.transform;
 
             // Tắt collider để nó không va đẩy lung tung
@@ -81,9 +87,17 @@ public class Hook : MonoBehaviour
 
             Item item = hookedItem.GetComponent<Item>();
             currentSpeed = normalSpeed / item.weight;
-            Debug.Log("dang tha moc");
+            
 
             isPulling = true;
         }
     }
+    private void UpdateScoreUI()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "$ " + totalGold.ToString();
+        }
+    }
+
 }

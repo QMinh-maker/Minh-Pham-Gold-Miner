@@ -61,7 +61,7 @@ public class HookMovement : MonoBehaviour
         {
             rotate_angle -= rotate_speed * Time.deltaTime;
         }
-        //Dùng Mathf.Sin hoặc += để tăng giảm góc theo thời gian.
+        
 
         transform.rotation = Quaternion.AngleAxis(rotate_angle, Vector3.forward);
 
