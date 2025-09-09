@@ -28,10 +28,7 @@ public class Hook : MonoBehaviour
     }
 
     void Update()
-    {
-        // Vẽ dây từ Miner tới Hook
-        
-        
+    {                  
         if (isPulling)
         {
             // Thu hook về Miner
@@ -69,7 +66,11 @@ public class Hook : MonoBehaviour
                 hookedItem = null;
                 isPulling = false;
                 currentSpeed = normalSpeed;
-                
+
+                if (hookMovement != null)
+                {
+                    hookMovement.move_speed = hookMovement.initial_move_speed;
+                }
 
             }
         }
@@ -77,8 +78,14 @@ public class Hook : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        HandleHookedItem(collision);
+    }
+
+    private void HandleHookedItem(Collider2D collision)
+    {
         if (!isPulling && collision.CompareTag("Item"))
         {
+            Debug.Log("OnTriggerEnter2D Hook");
             rope.RenderLine(hookHead.position, true);
             hookedItem = collision.transform;
 
@@ -87,11 +94,20 @@ public class Hook : MonoBehaviour
 
             Item item = hookedItem.GetComponent<Item>();
             currentSpeed = normalSpeed / item.weight;
-            
+
+            if (hookMovement != null)
+            {
+                hookMovement.move_speed = currentSpeed;
+            }
 
             isPulling = true;
-        }
+            Debug.Log(currentSpeed);
+            hookMovement.HandleMoveBackOnHittingItem(collision);
+        }        
     }
+
+    public HookMovement hookMovement;
+
     private void UpdateScoreUI()
     {
         if (scoreText != null)

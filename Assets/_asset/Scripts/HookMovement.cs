@@ -12,7 +12,7 @@ public class HookMovement : MonoBehaviour
     private bool canRotate;                 // Có được lắc nữa không
 
     public float move_speed = 3f;           // Tốc độ di chuyển móc
-    private float initial_move_speed;       // Lưu lại tốc độ ban đầu
+    public float initial_move_speed;       // Lưu lại tốc độ ban đầu
 
    
     private float initial_Y;                // Vị trí Y ban đầu (mốc reset)
@@ -126,18 +126,22 @@ public class HookMovement : MonoBehaviour
             canRotate = true;
             ropeRenderer.RenderLine(temp, false);
             move_speed = initial_move_speed;
+            Debug.Log(move_speed);
         }
         else
         {
             ropeRenderer.RenderLine(transform.position, true); // vẽ dây
         }
     }
-    private void OnTriggerEnter2D(Collider2D other)
+
+
+    public void HandleMoveBackOnHittingItem(Collider2D other)
     {
         if (other.CompareTag("Item"))
         {
             moveDown = false; // bắt đầu kéo lên
             ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
+            Debug.Log("OnTriggerEnter2D HookMovement");
         }
     }
 }
