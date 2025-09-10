@@ -144,4 +144,15 @@ public class HookMovement : MonoBehaviour
             Debug.Log("OnTriggerEnter2D HookMovement");
         }
     }
+
+    public void ApplyWeight(float weight)
+    {
+        move_speed = move_speed / weight;
+        Debug.Log("Tốc độ mới: " + move_speed);
+    }
+
+    public void ResetMoveSpeed()
+    {
+        move_speed = initial_move_speed;
+    }
 }

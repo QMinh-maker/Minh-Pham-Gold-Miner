@@ -319,6 +319,7 @@ MonoBehaviour:
   max_Z: 80
   rotate_speed: 90
   move_speed: 450
+  initial_move_speed: 0
   maxRopeLength: 100
 --- !u!114 &4986617664480598781
 MonoBehaviour:
@@ -519,7 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f27ba8fa32c84345ba844e61f3325fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 5
   itemOffsetY: 0.2
   rope: {fileID: 4986617664480598781}
   hookHead: {fileID: 1661708058303939811}

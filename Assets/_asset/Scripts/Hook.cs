@@ -5,8 +5,8 @@ using TMPro;
 
 public class Hook : MonoBehaviour
 {
-    public float normalSpeed ;     // tốc độ kéo bình thường
-    private float currentSpeed;
+     
+    
     private bool isPulling = false;
     public float itemOffsetY = 0.3f;
 
@@ -18,34 +18,24 @@ public class Hook : MonoBehaviour
     public Transform hookHead;         // đầu móc (gắn collider)
 
     [SerializeField] private TextMeshProUGUI scoreText; // tham chiếu đến UI
+    public HookMovement hookMovement;
 
     void Start()
     {
-        player = GameObject.Find("Miner").transform;
-        currentSpeed = normalSpeed;
+        player = GameObject.Find("Miner").transform; 
         UpdateScoreUI();
-
     }
 
     void Update()
     {                  
         if (isPulling)
         {
-            // Thu hook về Miner
-            hookHead.position = Vector2.MoveTowards(
-                hookHead.position,
-                player.position,
-                currentSpeed * Time.deltaTime
-            );
             rope.RenderLine(hookHead.position, false);
-
 
             // Nếu có item dính thì nó đi theo hookHead
             if (hookedItem != null)
             {
-                hookedItem.position = hookHead.position - hookHead.up 
-                    * itemOffsetY;
-                
+                hookedItem.position = hookHead.position - hookHead.up * itemOffsetY;
             }
 
             // Khi hookHead chạm Miner
@@ -64,14 +54,7 @@ public class Hook : MonoBehaviour
 
                 // Reset hook
                 hookedItem = null;
-                isPulling = false;
-                currentSpeed = normalSpeed;
-
-                if (hookMovement != null)
-                {
-                    hookMovement.move_speed = hookMovement.initial_move_speed;
-                }
-
+                isPulling = false;     
             }
         }
     }
@@ -92,22 +75,14 @@ public class Hook : MonoBehaviour
             // Tắt collider để nó không va đẩy lung tung
             collision.enabled = false;
 
+            // Lấy trọng lượng item và giảm tốc độ hookMovement
             Item item = hookedItem.GetComponent<Item>();
-            currentSpeed = normalSpeed / item.weight;
-
-            if (hookMovement != null)
-            {
-                hookMovement.move_speed = currentSpeed;
-            }
+            hookMovement.ApplyWeight(item.weight);
 
             isPulling = true;
-            Debug.Log(currentSpeed);
             hookMovement.HandleMoveBackOnHittingItem(collision);
         }        
-    }
-
-    public HookMovement hookMovement;
-
+    }    
     private void UpdateScoreUI()
     {
         if (scoreText != null)
@@ -115,5 +90,4 @@ public class Hook : MonoBehaviour
             scoreText.text = "$ " + totalGold.ToString();
         }
     }
-
 }
