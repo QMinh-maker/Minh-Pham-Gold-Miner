@@ -126,7 +126,7 @@ public class HookMovement : MonoBehaviour
             canRotate = true;
             ropeRenderer.RenderLine(temp, false);
             move_speed = initial_move_speed;
-            Debug.Log(move_speed);
+            
         }
         else
         {
@@ -141,14 +141,14 @@ public class HookMovement : MonoBehaviour
         {
             moveDown = false; // bắt đầu kéo lên
             ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
-            Debug.Log("OnTriggerEnter2D HookMovement");
+            Debug.Log("Kéo Item lên");
         }
     }
 
     public void ApplyWeight(float weight)
     {
         move_speed = move_speed / weight;
-        Debug.Log("Tốc độ mới: " + move_speed);
+        
     }
 
     public void ResetMoveSpeed()

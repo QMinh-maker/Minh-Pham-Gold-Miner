@@ -17,13 +17,19 @@ public class Hook : MonoBehaviour
     public RopeRenderer rope;          // script vẽ dây
     public Transform hookHead;         // đầu móc (gắn collider)
 
-    [SerializeField] private TextMeshProUGUI scoreText; // tham chiếu đến UI
+    [SerializeField] private TextMeshProUGUI scoreText; // tham chiếu đến UI tiền
+    [SerializeField] private TextMeshProUGUI GoldScore;//UI giá trị item
+
+    private int pendingValue = 0; //Lưu giá trị item vừa kéo đc
+
     public HookMovement hookMovement;
 
     void Start()
     {
         player = GameObject.Find("Miner").transform; 
         UpdateScoreUI();
+        if (GoldScore != null)
+            GoldScore.gameObject.SetActive(false); // ẩn text phụ lúc đầu
     }
 
     void Update()
@@ -45,9 +51,13 @@ public class Hook : MonoBehaviour
                 if (hookedItem != null)
                 {
                     Item item = hookedItem.GetComponent<Item>();
-                    totalGold += item.value;
-                    Debug.Log("Tiền hiện tại: " + totalGold);
-                    
+                    pendingValue = item.value;
+
+                    Debug.Log("Item giá trị: " + pendingValue);
+
+                    // Hiện text giá trị item
+                    ShowItemValue(pendingValue);
+
                     Destroy(hookedItem.gameObject);
                     UpdateScoreUI(); // cập nhật điểm sau khi kéo xong
                 }
@@ -68,7 +78,7 @@ public class Hook : MonoBehaviour
     {
         if (!isPulling && collision.CompareTag("Item"))
         {
-            Debug.Log("OnTriggerEnter2D Hook");
+            Debug.Log("Móc đã chạm Item");
             rope.RenderLine(hookHead.position, true);
             hookedItem = collision.transform;
 
@@ -87,7 +97,34 @@ public class Hook : MonoBehaviour
     {
         if (scoreText != null)
         {
-            scoreText.text = "$ " + totalGold.ToString();
+            scoreText.text = "$" + totalGold.ToString();
+        }
+    }
+
+    private void ShowItemValue(int value)
+    {
+        if (GoldScore != null)
+        {
+            GoldScore.gameObject.SetActive(true);
+            GoldScore.text = "$" + value.ToString();
+
+            // Ẩn sau 2 giây
+            CancelInvoke(nameof(HideItemValue));
+            Invoke(nameof(HideItemValue), 2f);
+        }
+    }
+
+    private void HideItemValue()
+    {
+        if (GoldScore != null)
+        {
+            GoldScore.gameObject.SetActive(false);
+        }
+        if (pendingValue > 0)
+        {
+            totalGold += pendingValue;
+            pendingValue = 0;
+            UpdateScoreUI();
         }
     }
 }

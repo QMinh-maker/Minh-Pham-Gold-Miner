@@ -1,0 +1,12 @@
+
+
+- Đồ kéo: kim cương, chuột chũi, chuột kim cương, xương,
+sọ, thùng thuốc nổ, túi mù, xác thùng thuốc nổ
+- Buff: cỏ 4 lá, sách đá, đánh bóng kim cương, thanh TNT
+- Thanh TNT: animation nổ, phá hủy đồ
+- Nhạc: mở game, thông báo goal, chạm vàng, cộng tiền, 
+thả câu, kéo dây, nổ
+- Scene khác: Menu chính, màn hình goal, màn chơi 1-10,
+màn hình thắng, màn hình thua, cửa hàng
+- Script điều khiển: Dừng đồng hồ & chuyển động khi cộng tiền,
+qua màn hoặc ko qua màn
