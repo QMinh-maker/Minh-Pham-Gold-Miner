@@ -10,3 +10,9 @@ thả câu, kéo dây, nổ
 màn hình thắng, màn hình thua, cửa hàng
 - Script điều khiển: Dừng đồng hồ & chuyển động khi cộng tiền,
 qua màn hoặc ko qua màn
+
+
+11 = 4
+12 = 5
+13 = 6
+16 = 9

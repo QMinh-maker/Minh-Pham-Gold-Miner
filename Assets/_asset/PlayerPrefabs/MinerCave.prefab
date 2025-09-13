@@ -524,6 +524,7 @@ MonoBehaviour:
   rope: {fileID: 4986617664480598781}
   hookHead: {fileID: 1661708058303939811}
   scoreText: {fileID: 0}
+  GoldScore: {fileID: 0}
   hookMovement: {fileID: 0}
 --- !u!58 &4641408033224610315
 CircleCollider2D:
