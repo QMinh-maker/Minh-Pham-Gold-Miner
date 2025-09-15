@@ -6,6 +6,63 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_asset/Scenes/MainMenu.unity
+    guid: e68e791f5463ad94dafff92b8df52dc2
+  - enabled: 1
+    path: Assets/_asset/Scenes/First Goal.unity
+    guid: e3b7d229542f4a24baa1691bd71c7b02
+  - enabled: 1
     path: Assets/_asset/Scenes/Level 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 2.unity
+    guid: 1210e00aa5f4503458be40618fe4d4fe
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 3.unity
+    guid: 8b959d65ed3636a408f822318a630fe4
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 4.unity
+    guid: 773bd1db76fa70b4c901bfa903525ce7
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 5.unity
+    guid: 1a5d0eb732d0cee4f8f334229b79dffc
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 6.unity
+    guid: f546086500c5a4142921f5d38e2a16ee
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 7.unity
+    guid: 56f905b218802f8438b864cc059800ca
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 8.unity
+    guid: f68609e32520a2b4e8137380d455e4d4
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 9.unity
+    guid: 674805a0964123a48b53ece893c100e4
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 10.unity
+    guid: 87f6075fee0a6574ca78074a5c7f3d96
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 14.unity
+    guid: 263c9fa36a5905643bcae3e2a8036518
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 15.unity
+    guid: 99e73e2917a649c478de1ca74dda0d29
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 17.unity
+    guid: 6d53e1ec4f2f66c4e9f31405fa051ec9
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level 18.unity
+    guid: 132692f1b0c46a7408a20eee6c7b528e
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level Passed.unity
+    guid: a7ee2700110e5f44a95ad73b6fd1092e
+  - enabled: 1
+    path: Assets/_asset/Scenes/Level Failed.unity
+    guid: a715e9f65306fc24f85bef5cfefb102f
+  - enabled: 1
+    path: Assets/_asset/Scenes/Next Goals.unity
+    guid: e246e70c58fc02640a7ee5c65f7917a8
+  - enabled: 1
+    path: Assets/_asset/Scenes/Store.unity
+    guid: b4fcd17bbbe80244189e38ce5c38f435
   m_configObjects: {}
