@@ -1196,7 +1196,7 @@ Transform:
   - {fileID: 704182495}
   - {fileID: 1651527828}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -3027,7 +3027,7 @@ RectTransform:
   - {fileID: 1353784690}
   - {fileID: 1006356337}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3059,6 +3059,7 @@ GameObject:
   - component: {fileID: 1422273574}
   - component: {fileID: 1422273573}
   - component: {fileID: 1422273572}
+  - component: {fileID: 1422273575}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3114,8 +3115,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1422273575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c33850d82dfb934bbafc953a8fed852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLimit: 60
+  requiredScore: 650
+  nextSceneName: Level Passed
+  gameOverSceneName: Game Over
 --- !u!1 &1423229812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,11 +4222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564fe69b125cb5c41965a13a3f04434a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1972123048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1457854723344483703, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
-  m_PrefabInstance: {fileID: 1457854725009835910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1987928749 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 921247367, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
@@ -4226,27 +4238,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1457854723344483700, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
   m_PrefabInstance: {fileID: 1457854725009835910}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2001109098
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972123048}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e2093a44a12f1b4296ba30e5f2dfb2f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2019122866
 GameObject:
   m_ObjectHideFlags: 0

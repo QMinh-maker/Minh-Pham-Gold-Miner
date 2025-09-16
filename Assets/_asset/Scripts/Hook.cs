@@ -56,9 +56,8 @@ public class Hook : MonoBehaviour
                     Debug.Log("Item giá trị: " + pendingValue);
 
                     // Hiện text giá trị item
-                    ShowItemValue(pendingValue);
-
                     Destroy(hookedItem.gameObject);
+                    ShowItemValue(pendingValue);
                     UpdateScoreUI(); // cập nhật điểm sau khi kéo xong
                 }
 
@@ -98,6 +97,9 @@ public class Hook : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text = "$" + totalGold.ToString();
+            //Debug.Log("Đã cộng tiền");
+            PlayerPrefs.SetInt("PlayerScore", totalGold);
+            PlayerPrefs.Save();
         }
     }
 
