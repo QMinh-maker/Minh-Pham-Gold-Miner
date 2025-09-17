@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 250
-  weight: 3
+  weight: 4
   isSpecialItem: 0
 --- !u!50 &107990198143680669
 Rigidbody2D:

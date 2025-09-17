@@ -738,7 +738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c658d5ee306d558439bc91ea48f7cb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredScoreText: {fileID: 1190405053}
+  requiredScoreText: {fileID: 591030714}
   waitTime: 3
 --- !u!82 &1422273576
 AudioSource:

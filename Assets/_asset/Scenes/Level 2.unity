@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!50 &31898132
 Rigidbody2D:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!58 &53270336
 CircleCollider2D:
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!50 &298249695
 Rigidbody2D:
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  weight: 1
+  weight: 3
   isSpecialItem: 1
 --- !u!50 &302065295
 Rigidbody2D:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 600
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!58 &404020714
 CircleCollider2D:
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
-  weight: 2
+  weight: 3
   isSpecialItem: 0
 --- !u!50 &404803484
 Rigidbody2D:
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 11
-  weight: 3
+  weight: 4
   isSpecialItem: 0
 --- !u!58 &431992420
 CircleCollider2D:
@@ -1950,7 +1950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 20
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!50 &574827163
 Rigidbody2D:
@@ -2042,7 +2042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!58 &670743392
 CircleCollider2D:
@@ -2312,7 +2312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 100
-  weight: 2
+  weight: 3
   isSpecialItem: 0
 --- !u!50 &717142209
 Rigidbody2D:
@@ -2451,7 +2451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!50 &720004496
 Rigidbody2D:
@@ -2590,7 +2590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 500
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!50 &748824675
 Rigidbody2D:
@@ -2758,7 +2758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 20
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!58 &904012313
 CircleCollider2D:
@@ -3104,7 +3104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 11
-  weight: 3
+  weight: 4
   isSpecialItem: 0
 --- !u!50 &1197887763
 Rigidbody2D:
@@ -3462,7 +3462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 500
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!50 &1255285894
 Rigidbody2D:
@@ -3820,7 +3820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLimit: 60
-  nextSceneName: Next Golas
+  nextSceneName: Next Goals
   gameOverSceneName: GameOver
 --- !u!1 &1423229812
 GameObject:
@@ -4308,7 +4308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 20
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!50 &1490407489
 Rigidbody2D:
@@ -4447,7 +4447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 11
-  weight: 3
+  weight: 4
   isSpecialItem: 0
 --- !u!50 &1556613667
 Rigidbody2D:
@@ -4805,7 +4805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!50 &1692213458
 Rigidbody2D:
@@ -5119,7 +5119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 20
-  weight: 4
+  weight: 5
   isSpecialItem: 0
 --- !u!58 &1818258135
 CircleCollider2D:
@@ -5347,7 +5347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
-  weight: 1
+  weight: 2
   isSpecialItem: 0
 --- !u!50 &2019122871
 Rigidbody2D:

@@ -15,7 +15,7 @@ public class ShowRequiredScore : MonoBehaviour
     void Start()
     {
         // Lấy n hiện tại từ PlayerPrefs
-        n = PlayerPrefs.GetInt("LevelIndex", 1); // mặc định 1 nếu chưa có
+        n = PlayerPrefs.GetInt("LevelIndex", 2); // mặc định 1 nếu chưa có
 
         // Tăng n thêm 1 mỗi lần scene này được mở
         n++;
