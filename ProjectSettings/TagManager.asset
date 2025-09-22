@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Item
+  - Hook
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Explodable
   - Water
   - UI
   - 

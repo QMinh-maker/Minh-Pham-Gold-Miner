@@ -60,7 +60,7 @@ EditorBuildSettings:
     path: Assets/_asset/Scenes/Level Passed.unity
     guid: a7ee2700110e5f44a95ad73b6fd1092e
   - enabled: 1
-    path: Assets/_asset/Scenes/Game Over.unity
+    path: Assets/_asset/Scenes/GameOver.unity
     guid: a715e9f65306fc24f85bef5cfefb102f
   - enabled: 1
     path: Assets/_asset/Scenes/Store.unity
