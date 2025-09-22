@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 1190405054}
   - component: {fileID: 1190405053}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $650
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ed47fe47b52a1941b4771403b1d958d, type: 2}
   m_sharedMaterial: {fileID: 3948741688298705772, guid: 6ed47fe47b52a1941b4771403b1d958d, type: 2}
@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 1422273572}
   - component: {fileID: 1422273575}
   - component: {fileID: 1422273576}
+  - component: {fileID: 1422273577}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -913,3 +914,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 3
   nextSceneName: Level 1
+--- !u!114 &1422273577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c658d5ee306d558439bc91ea48f7cb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredScoreText: {fileID: 1190405053}
+  waitTime: 3
