@@ -23,6 +23,7 @@ public class Hook : MonoBehaviour
     private int pendingValue = 0; //Lưu giá trị item vừa kéo đc
 
     public HookMovement hookMovement;
+    private Collider2D hookCollider;   // thêm biến collider
 
     void Start()
     {
@@ -63,14 +64,15 @@ public class Hook : MonoBehaviour
 
                 // Reset hook
                 hookedItem = null;
-                isPulling = false;     
+                isPulling = false;
+                if (hookCollider != null) hookCollider.enabled = true;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleHookedItem(collision);
+        HandleHookedItem(collision);        
     }
 
     private void HandleHookedItem(Collider2D collision)
@@ -90,7 +92,11 @@ public class Hook : MonoBehaviour
 
             isPulling = true;
             hookMovement.HandleMoveBackOnHittingItem(collision);
-        }        
+        }
+        else
+        {
+            if (hookCollider != null) hookCollider.enabled = false; // tắt collider khi quay lên
+        }
     }    
     private void UpdateScoreUI()
     {

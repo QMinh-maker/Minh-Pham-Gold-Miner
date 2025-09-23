@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7480423713233068823}
   - component: {fileID: 7480423713233068820}
   - component: {fileID: 7480423713233068821}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: BigStone
   m_TagString: Item
   m_Icon: {fileID: 0}

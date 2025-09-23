@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8117663620683916564}
   - component: {fileID: 8117663620683916567}
   - component: {fileID: 8117663620683916566}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Diamond
   m_TagString: Item
   m_Icon: {fileID: 0}

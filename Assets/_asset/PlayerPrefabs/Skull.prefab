@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8424194371655927690}
   - component: {fileID: 6726099921769104586}
   - component: {fileID: 2454328884316540161}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Skull
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 20
   weight: 3
-  isSpecialItem: 1
+  isSpecialItem: 0
 --- !u!50 &2454328884316540161
 Rigidbody2D:
   serializedVersion: 4

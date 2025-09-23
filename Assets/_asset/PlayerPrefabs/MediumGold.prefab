@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2006988607279372732}
   - component: {fileID: 2006988607279372733}
   - component: {fileID: 2006988607279372730}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: MediumGold
   m_TagString: Item
   m_Icon: {fileID: 0}

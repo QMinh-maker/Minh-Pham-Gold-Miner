@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2629203517648974286}
   - component: {fileID: 2629203517648974285}
   - component: {fileID: 2629203517648974284}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: TreasureBag
   m_TagString: Item
   m_Icon: {fileID: 0}

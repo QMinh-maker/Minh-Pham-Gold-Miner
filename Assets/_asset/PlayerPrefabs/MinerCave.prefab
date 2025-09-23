@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 3144405907084407673}
   m_Layer: 5
   m_Name: Hook
-  m_TagString: Untagged
+  m_TagString: Hook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f27ba8fa32c84345ba844e61f3325fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemOffsetY: 0.2
+  itemOffsetY: 60
   rope: {fileID: 4986617664480598781}
   hookHead: {fileID: 1661708058303939811}
   scoreText: {fileID: 0}

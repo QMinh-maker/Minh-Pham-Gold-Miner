@@ -9,16 +9,13 @@ public class ExplosiveBarrel : MonoBehaviour
     [SerializeField] private LayerMask explodableLayerMask;
     [SerializeField] public float destroyDelay = 0.5f;
 
-    [SerializeField]
-    private GameObject barrelRemainsPrefab;
-
-    private bool Exploding = false;
+    private bool hasExploded = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Hook"))
         {
-            Exploding = true;
+            //Exploded = true;
             Debug.Log("Hook chạm vào TNT!");
             Explode();
             
@@ -27,6 +24,9 @@ public class ExplosiveBarrel : MonoBehaviour
 
     private void Explode()
     {
+        if (hasExploded) return;   // chặn nổ lại lần 2
+        hasExploded = true;
+
         if (animator != null)
         {
             animator.SetTrigger("Explode");
@@ -35,15 +35,23 @@ public class ExplosiveBarrel : MonoBehaviour
         Collider2D[] objectsToBlow = Physics2D.OverlapCircleAll(
             transform.position, ExplosiveRange, explodableLayerMask);
 
-        foreach (var objectToBlow in objectsToBlow) 
-        { 
-            Destroy(objectToBlow.gameObject);
-        }
-
-        if (barrelRemainsPrefab != null)
+        foreach (var obj in objectsToBlow) 
         {
-            Instantiate(barrelRemainsPrefab, transform.position, Quaternion.identity);
+            if (obj.gameObject == this.gameObject) continue; // bỏ qua chính nó
+
+            // Nếu là TNT khác → gọi Explode()
+            ExplosiveBarrel otherTNT = obj.GetComponent<ExplosiveBarrel>();
+            if (otherTNT != null)
+            {
+                otherTNT.Explode();
+            }
+            else
+            {
+                // Nếu là item bình thường thì hủy
+                Destroy(obj.gameObject);
+            }   
         }
+        GetComponent<Collider2D>().enabled = false;
     }
 
     private void OnDrawGizmos()

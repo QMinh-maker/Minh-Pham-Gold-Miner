@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5793826398065014944}
   - component: {fileID: 4257417539998541492}
   - component: {fileID: 8792863298889655326}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: GemMouse
   m_TagString: Item
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 414355484935111094}
   - component: {fileID: 414355484935111095}
   - component: {fileID: 414355484935111092}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: GreatGold
   m_TagString: Item
   m_Icon: {fileID: 0}
