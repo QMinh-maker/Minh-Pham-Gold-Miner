@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 328193451}
   - component: {fileID: 328193450}
   m_Layer: 5
-  m_Name: Money
+  m_Name: MoneySign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3060,7 +3060,8 @@ GameObject:
   - component: {fileID: 1422273573}
   - component: {fileID: 1422273572}
   - component: {fileID: 1422273576}
-  - component: {fileID: 1422273575}
+  - component: {fileID: 1422273577}
+  - component: {fileID: 1422273578}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3116,9 +3117,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1422273575
+--- !u!114 &1422273576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c383f6d005a8d134494bea74ac908aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1422273577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3132,8 +3145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeLimit: 60
   nextSceneName: Level Passed
-  gameOverSceneName: Game Over
---- !u!114 &1422273576
+  gameOverSceneName: GameOver
+--- !u!114 &1422273578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3142,7 +3155,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422273571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c383f6d005a8d134494bea74ac908aa4, type: 3}
+  m_Script: {fileID: 11500000, guid: d0a590c23393d9643a7801d28734c0a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1423229812
@@ -3279,7 +3292,7 @@ GameObject:
   - component: {fileID: 1457809476}
   - component: {fileID: 1457809475}
   m_Layer: 5
-  m_Name: Clock
+  m_Name: ClockSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3508,7 +3521,7 @@ Transform:
   - {fileID: 1490407486}
   - {fileID: 302065292}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1490407484
 GameObject:
@@ -4579,7 +4592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457854724830140871, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1457854724830140871, guid: 36025bee49da1f749a1a2776cebd2002, type: 3}
       propertyPath: m_LocalPosition.x

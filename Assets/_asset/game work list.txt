@@ -8,8 +8,9 @@ sọ, thùng thuốc nổ, túi mù, xác thùng thuốc nổ
 thả câu, kéo dây, nổ
 - Scene khác: Menu chính, màn hình goal, màn chơi 1-10,
 màn hình thắng, màn hình thua, cửa hàng
-- Script điều khiển: Dừng đồng hồ & chuyển động khi cộng tiền,
-qua màn hoặc ko qua màn
+- Script điều khiển: Check goal, lưu tiền, kiểm tra tiền vs goal
+để cem liệu qua màn hoặc ko qua màn
+
 
 
 11 = 4

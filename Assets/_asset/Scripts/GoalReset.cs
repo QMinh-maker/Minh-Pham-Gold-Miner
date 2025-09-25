@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoalReset : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         // Reset n về 0 khi bắt đầu game mới
         PlayerPrefs.SetInt("LevelIndex", 0);

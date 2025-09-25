@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class ShowRequiredScore : MonoBehaviour
+public class ShowNextGoal : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI requiredScoreText;
     [SerializeField] private float waitTime = 3f; // thời gian chờ trước khi qua scene
@@ -15,10 +15,10 @@ public class ShowRequiredScore : MonoBehaviour
     void Start()
     {
         // Lấy n hiện tại từ PlayerPrefs
-        n = PlayerPrefs.GetInt("LevelIndex"); // mặc định 1 nếu chưa có
+        n = PlayerPrefs.GetInt("LevelIndex",1); // mặc định 1 nếu chưa có
 
         // Tăng n thêm 1 mỗi lần scene này được mở
-        n+=1;
+        n += 1;
         PlayerPrefs.SetInt("LevelIndex", n);
         PlayerPrefs.Save();
 
