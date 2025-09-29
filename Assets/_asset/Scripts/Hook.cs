@@ -103,7 +103,7 @@ public class Hook : MonoBehaviour
         if (scoreText != null)
         {
             scoreText.text =  totalGold.ToString();
-            //Debug.Log("Đã cộng tiền");
+            Debug.Log("Đã cộng tiền");
             PlayerPrefs.SetInt("PlayerScore", totalGold);
             PlayerPrefs.Save();
         }

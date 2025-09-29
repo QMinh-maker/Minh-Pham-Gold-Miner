@@ -2782,6 +2782,9 @@ GameObject:
   - component: {fileID: 1422273573}
   - component: {fileID: 1422273572}
   - component: {fileID: 1422273575}
+  - component: {fileID: 1422273578}
+  - component: {fileID: 1422273577}
+  - component: {fileID: 1422273576}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2854,6 +2857,45 @@ MonoBehaviour:
   timeLimit: 60
   nextSceneName: Next Goals
   gameOverSceneName: GameOver
+--- !u!114 &1422273576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98daf4729440dd44a101a569a93d434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  requiredScoreText: {fileID: 1640880396}
+--- !u!114 &1422273577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04325be4c23b5704aa7ddb51985c9524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 523332897}
+--- !u!114 &1422273578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1456523d94e989e4b8b04c473068f2b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelNumberText: {fileID: 1745953989}
 --- !u!1 &1423229812
 GameObject:
   m_ObjectHideFlags: 0

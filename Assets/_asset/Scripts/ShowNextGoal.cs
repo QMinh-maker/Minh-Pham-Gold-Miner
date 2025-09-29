@@ -29,6 +29,8 @@ public class ShowNextGoal : MonoBehaviour
         if (requiredScoreText != null)
         {
             requiredScoreText.text = "$" + requiredScore.ToString();
+            PlayerPrefs.SetInt("requiredScore", requiredScore);
+            PlayerPrefs.Save();
         }
 
         // Sau waitTime giây thì load scene kế tiếp
