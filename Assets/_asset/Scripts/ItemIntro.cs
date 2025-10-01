@@ -26,5 +26,6 @@ public class ItemIntro : MonoBehaviour
             currentIntro = ShowIntro; // cập nhật intro đang mở
         }
     }
+   
 }
 

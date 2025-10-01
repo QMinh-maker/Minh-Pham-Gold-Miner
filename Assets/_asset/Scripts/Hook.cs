@@ -4,10 +4,11 @@ using UnityEngine;
 using TMPro;
 
 public class Hook : MonoBehaviour
-{
-     
-    
+{     
     private bool isPulling = false;
+    private bool canCatch = true; // cờ kiểm soát khả năng bắt item
+
+
     public float itemOffsetY = 0.3f;
 
     private Transform player;          // Nhân vật Miner
@@ -23,8 +24,9 @@ public class Hook : MonoBehaviour
     private int pendingValue = 0; //Lưu giá trị item vừa kéo đc
 
     public HookMovement hookMovement;
-    private Collider2D hookCollider;   // thêm biến collider
 
+
+   
     void Start()
     {
         player = GameObject.Find("Miner").transform; 
@@ -65,7 +67,9 @@ public class Hook : MonoBehaviour
                 // Reset hook
                 hookedItem = null;
                 isPulling = false;
-                if (hookCollider != null) hookCollider.enabled = true;
+
+                // Bật lại khả năng bắt item
+                EnableCatch();
             }
         }
     }
@@ -77,7 +81,7 @@ public class Hook : MonoBehaviour
 
     private void HandleHookedItem(Collider2D collision)
     {
-        if (!isPulling && collision.CompareTag("Item"))
+        if (canCatch && !isPulling && collision.CompareTag("Item"))
         {
             Debug.Log("Móc đã chạm Item");
             rope.RenderLine(hookHead.position, true);
@@ -93,11 +97,24 @@ public class Hook : MonoBehaviour
             isPulling = true;
             hookMovement.HandleMoveBackOnHittingItem(collision);
         }
-        else
-        {
-            if (hookCollider != null) hookCollider.enabled = false; // tắt collider khi quay lên
-        }
-    }    
+       
+    }
+
+    // Gọi từ HookMovement khi đạt maxRopeLength
+    public void DisableCatch()
+    {
+        canCatch = false;
+        Debug.Log("Không thể bắt item nữa (dây đã max length)");
+    }
+
+    // Bật lại khi hookHead về Miner
+    public void EnableCatch()
+    {
+        canCatch = true;
+        Debug.Log("Có thể bắt item trở lại");
+    }
+
+
     private void UpdateScoreUI()
     {
         if (scoreText != null)

@@ -3143,7 +3143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c33850d82dfb934bbafc953a8fed852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 30
+  timeLimit: 60
   nextSceneName: Level Passed
   gameOverSceneName: GameOver
 --- !u!114 &1422273578

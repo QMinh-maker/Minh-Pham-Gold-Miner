@@ -8,6 +8,9 @@ public class ItemPrice : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI PriceText;
     [SerializeField] private TextMeshProUGUI Money;
+    [SerializeField] private TextMeshProUGUI NextLevelTalk;
+    [SerializeField] private GameObject ItemIntro;
+    [SerializeField] private GameObject DeleteItem;
     
 
     private int price;
@@ -20,7 +23,8 @@ public class ItemPrice : MonoBehaviour
 
         if (!isInitialized)
         {
-            price = Random.Range(1, 801);
+            //price = Random.Range(1, 801);
+            price = 0;
             isInitialized = true;
         }
 
@@ -35,10 +39,20 @@ public class ItemPrice : MonoBehaviour
             bool bought = moneyManager.SpendMoney(price);
             if (bought)
             {
-                Debug.Log("Mua thành công: -" + price);
-
-                
+                Debug.Log("Mua thành công: -" + price);               
             }
+
+            if (DeleteItem != null)
+            {
+                DeleteItem.SetActive(false); // xóa item khi mua thành công
+                NextLevelTalk.gameObject.SetActive(true);
+                ItemIntro.gameObject.SetActive(false);
+                SalesManControl.SetBoughtItem();
+            }
+        }
+        else
+        {
+            Debug.Log("Không đủ tiền!");
         }
     }
 }

@@ -20,14 +20,15 @@ public class HookMovement : MonoBehaviour
     private bool moveDown;                  // Trạng thái: đang đi xuống
     private RopeRenderer ropeRenderer;      // Script vẽ dây
 
-    public float maxRopeLength = 4.5f;      // Chiều dài dây tối đa
+    public float maxRopeLength ;            // Chiều dài dây tối đa
     private Vector3 startPos;               // Điểm neo ban đầu của dây
 
-    
+    private Hook hook;
 
     private void Awake()
     {
         ropeRenderer = GetComponent<RopeRenderer>();
+        hook = FindObjectOfType<Hook>(); // tìm script Hook trong scene
     }
 
     void Start()
@@ -108,9 +109,11 @@ public class HookMovement : MonoBehaviour
             if (distance >= maxRopeLength)
             {
                 moveDown = false;
-                //Khi độ dài dây vượt quá maxRopeLength:
-                //đổi sang moveDown = false để kéo lên.
-                
+                //Khi độ dài dây vượt quá maxRopeLength, đổi sang moveDown = false để kéo lên.
+                // Không cho bắt item khi dây chạm max length
+                if (hook != null)
+                    hook.DisableCatch();
+
             }
         }
         else
@@ -126,7 +129,10 @@ public class HookMovement : MonoBehaviour
             canRotate = true;
             ropeRenderer.RenderLine(temp, false);
             move_speed = initial_move_speed;
-            
+            // Cho phép bắt item lại khi về Miner
+            if (hook != null)
+                hook.EnableCatch();
+
         }
         else
         {
