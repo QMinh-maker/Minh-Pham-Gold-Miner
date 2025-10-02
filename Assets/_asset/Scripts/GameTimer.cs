@@ -18,7 +18,7 @@ public class GameTimer : MonoBehaviour
         timer = timeLimit;
 
         // Lấy n từ PlayerPrefs, mặc định 1 nếu chưa có
-        n = PlayerPrefs.GetInt("LevelIndex", 0) + 1;
+        n = PlayerPrefs.GetInt("LevelIndex", 0) ;
         PlayerPrefs.SetInt("LevelIndex", n); // lưu lại để lần sau tăng
         PlayerPrefs.Save();
 

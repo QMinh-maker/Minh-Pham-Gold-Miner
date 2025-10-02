@@ -9,13 +9,13 @@ public class ShowNextGoal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI requiredScoreText;
     [SerializeField] private float waitTime = 3f; // thời gian chờ trước khi qua scene
 
-    private int n;
+    public int n;
     private int requiredScore;
 
     void Start()
     {
         // Lấy n hiện tại từ PlayerPrefs
-        n = PlayerPrefs.GetInt("LevelIndex",1); // mặc định 1 nếu chưa có
+        //n = PlayerPrefs.GetInt("LevelIndex",0); mặc định 1 nếu chưa có
 
         // Tăng n thêm 1 mỗi lần scene này được mở
         n += 1;
@@ -23,7 +23,7 @@ public class ShowNextGoal : MonoBehaviour
         PlayerPrefs.Save();
 
         // Tính điểm yêu cầu
-        requiredScore = 135 * n * n + 140 * n + 375;
+        requiredScore = 135 * (n-1) * (n - 1) + 140 * (n - 1) + 375;
 
         // Hiện ra UI
         if (requiredScoreText != null)

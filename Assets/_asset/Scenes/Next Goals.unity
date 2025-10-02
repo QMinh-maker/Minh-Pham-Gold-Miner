@@ -836,3 +836,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredScoreText: {fileID: 1190405053}
   waitTime: 3
+  n: 2
