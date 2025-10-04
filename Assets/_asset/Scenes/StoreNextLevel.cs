@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
-public class LevelNo : MonoBehaviour
+public class StoreNextLevel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI LevelNumberText;
     private int levelNumber;
@@ -11,7 +11,7 @@ public class LevelNo : MonoBehaviour
     void Start()
     {
         levelNumber = PlayerPrefs.GetInt("LevelIndex"); // mặc định 1 nếu chưa có
-        //levelNumber += 1;
+        levelNumber += 1;
         PlayerPrefs.SetInt("LevelIndex", levelNumber);
         PlayerPrefs.Save();
 
@@ -21,5 +21,6 @@ public class LevelNo : MonoBehaviour
         }
     }
 
-   
+
 }
+

@@ -1436,7 +1436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &574827159
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2451,7 +2451,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1197887759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3060,8 +3060,7 @@ GameObject:
   - component: {fileID: 1422273573}
   - component: {fileID: 1422273572}
   - component: {fileID: 1422273576}
-  - component: {fileID: 1422273577}
-  - component: {fileID: 1422273578}
+  - component: {fileID: 1422273579}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3131,7 +3130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c383f6d005a8d134494bea74ac908aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1422273577
+--- !u!114 &1422273579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3140,24 +3139,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1422273571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c33850d82dfb934bbafc953a8fed852, type: 3}
+  m_Script: {fileID: 11500000, guid: 1456523d94e989e4b8b04c473068f2b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 60
-  nextSceneName: Level Passed
-  gameOverSceneName: GameOver
---- !u!114 &1422273578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422273571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a590c23393d9643a7801d28734c0a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  LevelNumberText: {fileID: 1745953989}
 --- !u!1 &1423229812
 GameObject:
   m_ObjectHideFlags: 0
@@ -3542,7 +3527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1490407485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4817,6 +4802,10 @@ PrefabInstance:
     - target: {fileID: 3535730583379741779, guid: 50e48970497df104981e10229109f38d, type: 3}
       propertyPath: m_Name
       value: SmallStone
+      objectReference: {fileID: 0}
+    - target: {fileID: 3535730583379741779, guid: 50e48970497df104981e10229109f38d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3535730583379741805, guid: 50e48970497df104981e10229109f38d, type: 3}
       propertyPath: m_RootOrder

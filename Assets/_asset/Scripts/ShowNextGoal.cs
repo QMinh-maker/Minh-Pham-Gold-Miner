@@ -18,12 +18,12 @@ public class ShowNextGoal : MonoBehaviour
         //n = PlayerPrefs.GetInt("LevelIndex",0); mặc định 1 nếu chưa có
 
         // Tăng n thêm 1 mỗi lần scene này được mở
-        n += 1;
+        
         PlayerPrefs.SetInt("LevelIndex", n);
         PlayerPrefs.Save();
 
         // Tính điểm yêu cầu
-        requiredScore = 135 * (n-1) * (n - 1) + 140 * (n - 1) + 375;
+        requiredScore = 135 * n * n  + 140 * n + 375;
 
         // Hiện ra UI
         if (requiredScoreText != null)

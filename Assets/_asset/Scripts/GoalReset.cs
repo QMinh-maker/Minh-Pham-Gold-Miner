@@ -7,9 +7,9 @@ public class GoalReset : MonoBehaviour
     void Awake()
     {
         // Reset n về 0 khi bắt đầu game mới
-        PlayerPrefs.SetInt("LevelIndex", 0);
+        PlayerPrefs.SetInt("LevelIndex", 1);
         PlayerPrefs.Save();
 
-        Debug.Log("Reset LevelIndex về 0");
+        Debug.Log("Reset LevelIndex về 1");
     }
 }

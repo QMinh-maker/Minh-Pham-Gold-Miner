@@ -29,7 +29,9 @@ public class Hook : MonoBehaviour
    
     void Start()
     {
-        player = GameObject.Find("Miner").transform; 
+        player = GameObject.Find("Miner").transform;
+        int previousScore = PlayerPrefs.GetInt("PlayerScore");
+        totalGold = previousScore;
         UpdateScoreUI();
         if (GoldScore != null)
             GoldScore.gameObject.SetActive(false); // ẩn text phụ lúc đầu
@@ -48,8 +50,8 @@ public class Hook : MonoBehaviour
             }
 
             // Khi hookHead chạm Miner
-            if (Vector2.Distance(hookHead.position, player.position) <= 76 
-                && Vector2.Distance(hookHead.position, player.position) >= 31)
+            if (Vector2.Distance(hookHead.position, player.position) <= 100 
+                && Vector2.Distance(hookHead.position, player.position) >= 10)
             {
                 if (hookedItem != null)
                 {

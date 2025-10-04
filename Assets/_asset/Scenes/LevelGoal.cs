@@ -18,7 +18,7 @@ public class LevelGoal : MonoBehaviour
         timer = timeLimit;
 
         // Lấy n từ PlayerPrefs, mặc định 2 nếu chưa có
-        n = PlayerPrefs.GetInt("LevelIndex", 2);
+        n = PlayerPrefs.GetInt("LevelIndex", 1);
         
 
         // Tính điểm yêu cầu theo công thức
