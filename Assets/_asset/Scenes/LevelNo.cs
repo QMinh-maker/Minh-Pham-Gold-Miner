@@ -10,8 +10,8 @@ public class LevelNo : MonoBehaviour
 
     void Start()
     {
-        levelNumber = PlayerPrefs.GetInt("LevelIndex"); // mặc định 1 nếu chưa có
-        //levelNumber += 1;
+        levelNumber = PlayerPrefs.GetInt("LevelIndex",1); // mặc định 1 nếu chưa có
+        
         PlayerPrefs.SetInt("LevelIndex", levelNumber);
         PlayerPrefs.Save();
 

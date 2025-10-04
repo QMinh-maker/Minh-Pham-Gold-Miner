@@ -37,7 +37,7 @@ public class SalesManControl : MonoBehaviour
         hasBoughtItem = false;
 
         // load scene sau 3s để kịp xem animation
-        Invoke(nameof(LoadNextScene), 3f);
+        Invoke(nameof(LoadNextScene), 2f);
     }
 
     private void LoadNextScene()

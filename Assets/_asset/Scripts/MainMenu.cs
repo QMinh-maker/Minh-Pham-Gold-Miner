@@ -11,9 +11,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void NextGoal()
-    {
-        //int NextGoalScene = SceneManager.sceneCountInBuildSettings - 2; // lấy scene goal
-        //SceneManager.LoadScene(NextGoalScene);
+    { 
         SceneManager.LoadScene((0) + 3);
     }
 }

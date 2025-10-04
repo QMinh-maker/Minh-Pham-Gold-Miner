@@ -9,7 +9,8 @@ public class GoalReset : MonoBehaviour
         // Reset n về 0 khi bắt đầu game mới
         PlayerPrefs.SetInt("LevelIndex", 1);
         PlayerPrefs.Save();
+        PlayerPrefs.SetInt("PlayerScore", 0);
 
-        Debug.Log("Reset LevelIndex về 1");
+        Debug.Log("Reset LevelIndex về 1, money ve 0");
     }
 }

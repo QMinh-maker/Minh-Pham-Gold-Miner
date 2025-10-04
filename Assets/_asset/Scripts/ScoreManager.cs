@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     private int currentScore;
 
-    void Start()
+    void Awake()
     {
         // Lấy điểm đã lưu từ PlayerPrefs, mặc định 0
         currentScore = PlayerPrefs.GetInt("PlayerScore", 0); 
