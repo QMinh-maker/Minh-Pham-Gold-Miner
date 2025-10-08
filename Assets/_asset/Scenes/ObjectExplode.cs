@@ -1,19 +1,48 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectExplode : MonoBehaviour
 {
-    public GameObject explosionPrefab;
+    private Animator animator;
+    private bool isExploding = false;
 
-    private void OnTriggerEnter2D(Collider2D collision) => Die();
+    [SerializeField] private string dynamiteTag = "Hook"; // Tag của Dynamite
 
-    private void Die()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        var explosion = Instantiate(explosionPrefab, transform.position, transform.rotation);
-        Destroy(explosion, 1);
-        Destroy(gameObject);
-
+        
+        
+        // Nếu đã nổ rồi thì bỏ qua
+        if (isExploding) return;
+        
+        // Chỉ nổ khi va chạm với object có tag Dynamite
+        if (collision.CompareTag(dynamiteTag))
+        {
+            
+            Explode();
+            
+        }
     }
+
+    private void Explode()
+    {
+        isExploding = true;
+        Debug.Log("Explode");
+
+        // Gọi animation nổ
+        if (animator != null)
+        {
+            animator.SetTrigger("Explode");
+
+        }
+
+        // Huỷ object sau khi animation nổ xong
+        
+        Destroy(gameObject, 0);
+        Destroy(GameObject.FindGameObjectWithTag(dynamiteTag));
+    }
+
+   
 }
 

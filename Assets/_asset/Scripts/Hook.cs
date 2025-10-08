@@ -90,7 +90,7 @@ public class Hook : MonoBehaviour
             hookedItem = collision.transform;
 
             // Tắt collider để nó không va đẩy lung tung
-            collision.enabled = false;
+            //collision.enabled = false;
 
             // Lấy trọng lượng item và giảm tốc độ hookMovement
             Item item = hookedItem.GetComponent<Item>();
