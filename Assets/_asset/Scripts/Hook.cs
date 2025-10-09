@@ -25,8 +25,8 @@ public class Hook : MonoBehaviour
 
     public HookMovement hookMovement;
 
+    [SerializeField] private ThrowingDynamite throwingDynamite;
 
-   
     void Start()
     {
         player = GameObject.Find("Miner").transform;
@@ -89,9 +89,6 @@ public class Hook : MonoBehaviour
             rope.RenderLine(hookHead.position, true);
             hookedItem = collision.transform;
 
-            // Tắt collider để nó không va đẩy lung tung
-            //collision.enabled = false;
-
             // Lấy trọng lượng item và giảm tốc độ hookMovement
             Item item = hookedItem.GetComponent<Item>();
             hookMovement.ApplyWeight(item.weight);
@@ -153,5 +150,9 @@ public class Hook : MonoBehaviour
             pendingValue = 0;
             UpdateScoreUI();
         }
+    }
+    public bool IsPullingItem()
+    {
+        return isPulling;
     }
 }

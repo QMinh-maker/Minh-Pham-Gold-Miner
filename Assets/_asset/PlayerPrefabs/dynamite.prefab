@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1635878451271582147}
   - component: {fileID: 4383023156545273668}
   - component: {fileID: -1935379080964122487}
-  - component: {fileID: 3145213407504317091}
   - component: {fileID: 367828429301668568}
   m_Layer: 6
   m_Name: dynamite
@@ -149,21 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dynamiteTag: Item
---- !u!111 &3145213407504317091
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537882704206524393}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d64bf9ac68853ab46872ad4877d8c50c, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &367828429301668568
 Animator:
   serializedVersion: 5
