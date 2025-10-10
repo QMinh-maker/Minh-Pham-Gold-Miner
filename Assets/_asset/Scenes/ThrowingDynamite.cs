@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using TMPro;
 
 public class ThrowingDynamite : MonoBehaviour
 {
@@ -7,8 +8,17 @@ public class ThrowingDynamite : MonoBehaviour
     public Transform hookTarget;        // Hook target (gắn HookHead hoặc Hook)
     public Vector3 DynamiteOffset;      // Lệch khi tạo dynamite
     public Hook hookScript;             // Tham chiếu đến Hook
-
+    [SerializeField] private TextMeshProUGUI dynamiteCountText;
     
+    private int dynamiteCount;          // Số dynamite hiện có
+    private const string DYNAMITE_KEY = "DynamiteCount"; // Key lưu dữ liệu
+
+    void Start()
+    {
+        // Lấy số dynamite đã lưu (mặc định 0)
+        dynamiteCount = PlayerPrefs.GetInt(DYNAMITE_KEY, 0);
+        UpdateUI();
+    }
 
     public void Throwing()
     {
@@ -19,7 +29,16 @@ public class ThrowingDynamite : MonoBehaviour
             return;
         }
 
-       
+         if (dynamiteCount <= 0)
+        {
+            Debug.Log("❌ Hết dynamite, không thể ném!");
+            return;
+        }
+
+        dynamiteCount--;
+        PlayerPrefs.SetInt(DYNAMITE_KEY, dynamiteCount);
+        PlayerPrefs.Save();
+        UpdateUI();
 
         // Tạo dynamite
         GameObject dynamite = Instantiate(DynamitePrefab, transform.position + DynamiteOffset, Quaternion.identity);
@@ -28,12 +47,16 @@ public class ThrowingDynamite : MonoBehaviour
         var moveScript = dynamite.AddComponent<DynamiteMoveAlongRope>();
         moveScript.Setup(transform, hookTarget);
 
-        Debug.Log("Ném dynamite!");
+        Debug.Log("Ném dynamite!");        
+    }  
 
-        
+    private void UpdateUI()
+    {
+        if (dynamiteCountText != null)
+        {
+            dynamiteCountText.text = "x" + dynamiteCount;
+        }
     }
-
-   
 }
 
 

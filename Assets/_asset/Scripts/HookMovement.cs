@@ -24,6 +24,7 @@ public class HookMovement : MonoBehaviour
     private Vector3 startPos;               // Điểm neo ban đầu của dây
 
     private Hook hook;
+    private GameObject currentItem;
 
     private void Awake()
     {
@@ -45,6 +46,7 @@ public class HookMovement : MonoBehaviour
         Rotate(); //lắc dây qua lại khi đang nghỉ
         GetInput();//kiểm tra xem người chơi có thả dây ko
         MoveRope();//xử lý di chuyển lên xuống của móc
+        CheckItemDestroyed();//kiểm tra item bị destroy
     }
 
     void Rotate()
@@ -147,6 +149,7 @@ public class HookMovement : MonoBehaviour
         {
             moveDown = false; // bắt đầu kéo lên
             ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
+            currentItem = other.gameObject; // lưu lại item
             Debug.Log("Kéo Item lên");
         }
     }
@@ -160,5 +163,15 @@ public class HookMovement : MonoBehaviour
     public void ResetMoveSpeed()
     {
         move_speed = initial_move_speed;
+    }
+
+     private void CheckItemDestroyed()
+    {
+        // Nếu item đang bị kéo mà bị destroy => khôi phục tốc độ
+        if (currentItem == null && move_speed != initial_move_speed)
+        {
+            ResetMoveSpeed();
+            Debug.Log("Item bị destroy, khôi phục tốc độ ban đầu");
+        }
     }
 }
