@@ -460,6 +460,7 @@ MonoBehaviour:
   hookTarget: {fileID: 6453669135500383562}
   DynamiteOffset: {x: 0, y: 0, z: 0}
   hookScript: {fileID: 8461730984257778179}
+  dynamiteCountText: {fileID: 0}
 --- !u!1 &8721814554262873805
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +567,9 @@ MonoBehaviour:
   GoldScore: {fileID: 0}
   hookMovement: {fileID: 5665417616874950446}
   throwingDynamite: {fileID: 6531570123653502531}
+  valueSound: {fileID: 8300000, guid: c200e0db970461b41994dff398884b02, type: 3}
+  pullSound: {fileID: 8300000, guid: 63ac03cfbae8f004da8b31ae4020ec73, type: 3}
+  coinSound: {fileID: 8300000, guid: 7b4780e2fbd17af4fac9cb3a7ca6710f, type: 3}
 --- !u!58 &1078052792951899042
 CircleCollider2D:
   m_ObjectHideFlags: 0

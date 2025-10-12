@@ -1,126 +1,151 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[RequireComponent(typeof(AudioSource))]
 public class Hook : MonoBehaviour
-{     
+{
     private bool isPulling = false;
-    private bool canCatch = true; // cờ kiểm soát khả năng bắt item
-
+    private bool canCatch = true;
 
     public float itemOffsetY = 0.3f;
 
-    private Transform player;          // Nhân vật Miner
-    private Transform hookedItem;      // Item đang dính
+    private Transform player;
+    private Transform hookedItem;
 
-    private int totalGold = 0;         // Tiền người chơi
-    public RopeRenderer rope;          // script vẽ dây
-    public Transform hookHead;         // đầu móc (gắn collider)
+    private int totalGold = 0;
+    public RopeRenderer rope;
+    public Transform hookHead;
 
-    [SerializeField] private TextMeshProUGUI scoreText; // tham chiếu đến UI tiền
-    [SerializeField] private TextMeshProUGUI GoldScore;//UI giá trị item
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI GoldScore;
 
-    private int pendingValue = 0; //Lưu giá trị item vừa kéo đc
+    private int pendingValue = 0; // 💰 giá trị chờ cộng (sau khi ẩn text)
 
     public HookMovement hookMovement;
-
     [SerializeField] private ThrowingDynamite throwingDynamite;
+
+    // 🎵 Âm thanh
+    [Header("Sound Effects")]
+    public AudioClip valueSound;
+    public AudioClip pullSound;
+    public AudioClip coinSound;
+
+    private AudioSource audioSource;
+    private bool isPullSoundPlaying = false;
 
     void Start()
     {
         player = GameObject.Find("Miner").transform;
-        int previousScore = PlayerPrefs.GetInt("PlayerScore");
-        totalGold = previousScore;
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
+        audioSource.loop = false;
+        audioSource.spatialBlend = 0f;
+        audioSource.volume = 0.8f;
+
+        totalGold = PlayerPrefs.GetInt("PlayerScore", 0);
         UpdateScoreUI();
+
         if (GoldScore != null)
-            GoldScore.gameObject.SetActive(false); // ẩn text phụ lúc đầu
+            GoldScore.gameObject.SetActive(false);
     }
 
     void Update()
-    {                  
+    {
         if (isPulling)
         {
             rope.RenderLine(hookHead.position, false);
 
-            // Nếu có item dính thì nó đi theo hookHead
             if (hookedItem != null)
-            {
                 hookedItem.position = hookHead.position - hookHead.up * itemOffsetY;
-            }
 
-            // Khi hookHead chạm Miner
-            if (Vector2.Distance(hookHead.position, player.position) <= 100 
-                && Vector2.Distance(hookHead.position, player.position) >= 10)
+            if (!isPullSoundPlaying)
+                PlayPullLoop();
+
+            // Khi gần Miner → kéo xong
+            if (Vector2.Distance(hookHead.position, player.position) <= 100 &&
+                Vector2.Distance(hookHead.position, player.position) >= 10)
             {
                 if (hookedItem != null)
                 {
                     Item item = hookedItem.GetComponent<Item>();
-                    pendingValue = item.value;
+                    pendingValue = item.value; // chỉ lưu tạm, chưa cộng ngay
 
                     Debug.Log("Item giá trị: " + pendingValue);
 
-                    // Hiện text giá trị item
                     Destroy(hookedItem.gameObject);
-                    ShowItemValue(pendingValue);
-                    UpdateScoreUI(); // cập nhật điểm sau khi kéo xong
+                    ShowItemValue(pendingValue); // hiện UI giá trị
                 }
 
-                // Reset hook
                 hookedItem = null;
                 isPulling = false;
-
-                // Bật lại khả năng bắt item
+                StopPullLoop();
                 EnableCatch();
+                PlaySound(valueSound);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HandleHookedItem(collision);        
+        HandleHookedItem(collision);
     }
 
     private void HandleHookedItem(Collider2D collision)
     {
         if (canCatch && !isPulling && collision.CompareTag("Item"))
         {
-            Debug.Log("Móc đã chạm Item");
             rope.RenderLine(hookHead.position, true);
             hookedItem = collision.transform;
 
-            // Lấy trọng lượng item và giảm tốc độ hookMovement
             Item item = hookedItem.GetComponent<Item>();
             hookMovement.ApplyWeight(item.weight);
 
             isPulling = true;
             hookMovement.HandleMoveBackOnHittingItem(collision);
         }
-       
     }
 
-    // Gọi từ HookMovement khi đạt maxRopeLength
-    public void DisableCatch()
+    // 🔊 Phát âm
+    private void PlaySound(AudioClip clip)
     {
-        canCatch = false;
-        Debug.Log("Không thể bắt item nữa (dây đã max length)");
+        if (clip != null && audioSource != null)
+            audioSource.PlayOneShot(clip);
     }
 
-    // Bật lại khi hookHead về Miner
-    public void EnableCatch()
+    private void PlayPullLoop()
     {
-        canCatch = true;
-        Debug.Log("Có thể bắt item trở lại");
+        if (pullSound != null && audioSource != null)
+        {
+            audioSource.clip = pullSound;
+            audioSource.loop = true;
+            audioSource.Play();
+            isPullSoundPlaying = true;
+        }
     }
 
+    private void StopPullLoop()
+    {
+        if (isPullSoundPlaying && audioSource != null)
+        {
+            audioSource.loop = false;
+            audioSource.Stop();
+            isPullSoundPlaying = false;
+        }
+    }
 
+    // ✅ Cập nhật điểm chỉ khi HideItemValue() chạy xong
     private void UpdateScoreUI()
     {
         if (scoreText != null)
         {
-            scoreText.text =  totalGold.ToString();
-            Debug.Log("Đã cộng tiền");
+            scoreText.text = totalGold.ToString();
             PlayerPrefs.SetInt("PlayerScore", totalGold);
+            
             PlayerPrefs.Save();
         }
     }
@@ -132,27 +157,26 @@ public class Hook : MonoBehaviour
             GoldScore.gameObject.SetActive(true);
             GoldScore.text = "$" + value.ToString();
 
-            // Ẩn sau 2 giây
             CancelInvoke(nameof(HideItemValue));
-            Invoke(nameof(HideItemValue), 2f);
+            Invoke(nameof(HideItemValue), 2f); // ⏱ ẩn sau 2 giây
         }
     }
 
     private void HideItemValue()
     {
         if (GoldScore != null)
-        {
             GoldScore.gameObject.SetActive(false);
-        }
+
         if (pendingValue > 0)
         {
-            totalGold += pendingValue;
+            totalGold += pendingValue;     // 💰 chỉ cộng ở đây
             pendingValue = 0;
-            UpdateScoreUI();
+            PlaySound(coinSound);          // 🔊 âm cộng tiền
+            UpdateScoreUI();               // 🪙 cập nhật UI sau khi text ẩn
         }
     }
-    public bool IsPullingItem()
-    {
-        return isPulling;
-    }
+
+    public void DisableCatch() => canCatch = false;
+    public void EnableCatch() => canCatch = true;
+    public bool IsPullingItem() => isPulling;
 }

@@ -8,7 +8,7 @@ public class DynamitePurchaseManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dynamiteCountText; // UI hiển thị số lần mua
     private int dynamiteBuyCount;
 
-    private const string DYNAMITE_KEY = "DynamiteBuyCount"; // key lưu trong PlayerPrefs
+    private const string DYNAMITE_KEY = "DynamiteCount"; // key lưu trong PlayerPrefs
 
     void Start()
     {

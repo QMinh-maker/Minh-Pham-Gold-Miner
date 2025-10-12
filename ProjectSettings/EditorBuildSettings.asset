@@ -65,4 +65,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_asset/Scenes/Store.unity
     guid: b4fcd17bbbe80244189e38ce5c38f435
+  - enabled: 1
+    path: Assets/_asset/Scenes/StoreTestingItem.unity
+    guid: fcd0dda3a15ab274d9e5b5de6836ad1a
+  - enabled: 1
+    path: Assets/_asset/Scenes/explove test.unity
+    guid: 4204bb628561fc842898470e8e86600b
   m_configObjects: {}
