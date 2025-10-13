@@ -77,6 +77,7 @@ public class Hook : MonoBehaviour
 
                     Debug.Log("Item giá trị: " + pendingValue);
 
+                    item.GiveTreasureReward();
                     Destroy(hookedItem.gameObject);
                     ShowItemValue(pendingValue); // hiện UI giá trị
                 }

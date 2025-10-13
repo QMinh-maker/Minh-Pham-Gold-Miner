@@ -3,52 +3,67 @@ using TMPro;
 
 public class ThrowingDynamite : MonoBehaviour
 {
-    
-    public GameObject DynamitePrefab;   // Prefab dynamite
-    public Transform hookTarget;        // Hook target (gắn HookHead hoặc Hook)
-    public Vector3 DynamiteOffset;      // Lệch khi tạo dynamite
-    public Hook hookScript;             // Tham chiếu đến Hook
+    public static ThrowingDynamite Instance; // 👈 dùng Singleton để gọi từ script khác
+
+    public GameObject DynamitePrefab;
+    public Transform hookTarget;
+    public Vector3 DynamiteOffset;
+    public Hook hookScript;
     [SerializeField] private TextMeshProUGUI dynamiteCountText;
-    
-    private int dynamiteCount;          // Số dynamite hiện có
-    private const string DYNAMITE_KEY = "DynamiteCount"; // Key lưu dữ liệu
+
+    private int dynamiteCount;
+    private const string DYNAMITE_KEY = "DynamiteCount";
+
+    void Awake()
+    {
+        // Đảm bảo chỉ có 1 instance
+        Instance = this;
+    }
 
     void Start()
     {
-        // Lấy số dynamite đã lưu (mặc định 0)
+        // Lấy dữ liệu dynamite đã lưu
         dynamiteCount = PlayerPrefs.GetInt(DYNAMITE_KEY, 0);
+        UpdateUI();
+    }
+
+    // 👇 Hàm này rất quan trọng — để Item có thể cộng thêm dynamite
+    public void AddDynamite(int amount)
+    {
+        dynamiteCount += amount;
+        if (dynamiteCount < 0) dynamiteCount = 0;
+
+        PlayerPrefs.SetInt(DYNAMITE_KEY, dynamiteCount);
+        PlayerPrefs.Save();
+
         UpdateUI();
     }
 
     public void Throwing()
     {
-        // Nếu chưa gán hook hoặc hook chưa bắt item → không cho ném
+        // Không có hook hoặc hook chưa bắt item → không ném
         if (hookScript == null || !hookScript.IsPullingItem())
         {
             Debug.Log("Hook chưa bắt item — không thể ném dynamite!");
             return;
         }
 
-         if (dynamiteCount <= 0)
+        if (dynamiteCount <= 0)
         {
-            Debug.Log("❌ Hết dynamite, không thể ném!");
+            Debug.Log("Hết dynamite, không thể ném!");
             return;
         }
 
-        dynamiteCount--;
-        PlayerPrefs.SetInt(DYNAMITE_KEY, dynamiteCount);
-        PlayerPrefs.Save();
-        UpdateUI();
+        // Giảm số lượng và cập nhật UI
+        AddDynamite(-1);
 
-        // Tạo dynamite
+        // Tạo vật dynamite bay
         GameObject dynamite = Instantiate(DynamitePrefab, transform.position + DynamiteOffset, Quaternion.identity);
-
-        // Thêm script điều khiển bay dọc dây hook
         var moveScript = dynamite.AddComponent<DynamiteMoveAlongRope>();
         moveScript.Setup(transform, hookTarget);
 
-        Debug.Log("Ném dynamite!");        
-    }  
+        Debug.Log("Ném dynamite!");
+    }
 
     private void UpdateUI()
     {
@@ -58,5 +73,3 @@ public class ThrowingDynamite : MonoBehaviour
         }
     }
 }
-
-
