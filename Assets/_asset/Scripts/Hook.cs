@@ -73,13 +73,18 @@ public class Hook : MonoBehaviour
                 if (hookedItem != null)
                 {
                     Item item = hookedItem.GetComponent<Item>();
-                    pendingValue = item.value; // chỉ lưu tạm, chưa cộng ngay
 
-                    Debug.Log("Item giá trị: " + pendingValue);
+                    if (item != null)
+                    {
+                        // Gọi phần thưởng (nếu là Special Item)
+                        item.GiveTreasureReward();
 
-                    item.GiveTreasureReward();
-                    Destroy(hookedItem.gameObject);
-                    ShowItemValue(pendingValue); // hiện UI giá trị
+                        pendingValue = item.value;
+                        Destroy(hookedItem.gameObject);
+
+                        // Hiển thị giá trị item
+                        ShowItemValue(pendingValue);
+                    }
                 }
 
                 hookedItem = null;
@@ -151,7 +156,7 @@ public class Hook : MonoBehaviour
         }
     }
 
-    private void ShowItemValue(int value)
+    public void ShowItemValue(int value)
     {
         if (GoldScore != null)
         {
@@ -162,6 +167,20 @@ public class Hook : MonoBehaviour
             Invoke(nameof(HideItemValue), 2f); // ⏱ ẩn sau 2 giây
         }
     }
+
+    // 👇 Gọi từ Item để hiển thị phần thưởng đặc biệt
+    public void ShowSpecialReward(string rewardText)
+    {
+        if (GoldScore != null)
+        {
+            GoldScore.gameObject.SetActive(true);
+            GoldScore.text = rewardText;
+
+            CancelInvoke(nameof(HideItemValue));
+            Invoke(nameof(HideItemValue), 2f); // ẩn sau 2 giây
+        }
+    }
+
 
     private void HideItemValue()
     {
@@ -175,6 +194,13 @@ public class Hook : MonoBehaviour
             PlaySound(coinSound);          // 🔊 âm cộng tiền
             UpdateScoreUI();               // 🪙 cập nhật UI sau khi text ẩn
         }
+    }
+
+    public void AddGold(int amount)
+    {
+        totalGold += amount;
+        PlaySound(coinSound);
+        UpdateScoreUI();
     }
 
     public void DisableCatch() => canCatch = false;
