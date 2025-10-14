@@ -67,6 +67,7 @@ public class ThrowingDynamite : MonoBehaviour
 
     private void UpdateUI()
     {
+        
         if (dynamiteCountText != null)
         {
             dynamiteCountText.text = "x" + dynamiteCount;

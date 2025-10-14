@@ -6,11 +6,15 @@ public class Item : MonoBehaviour
     public int value;
     public float weight;
 
+    public GameObject strengthNotify;   // Prefab hoặc UI hiện thông báo Strength
+    public GameObject dynamiteNotify;   // Prefab hoặc UI hiện thông báo Dynamite
+
     private const string ROCK_KEY = "Rock_book";
     private const string POLISH_KEY = "Diamond_polish";
     private const string STRENGTH_KEY = "Strength_drink";
     private const string CLOVER_KEY = "Luck_clover";
-    private const string DYNAMITE_KEY = "DynamiteCount";
+
+    public AudioSource HighValueSound;
 
     void Start()
     {
@@ -59,25 +63,30 @@ public class Item : MonoBehaviour
                     hook.ShowItemValue(value);
                     hook.StartCoroutine(AddMoneyAfterDelay(hook, value, 2f));
                 }
-                Debug.Log($"💰 TreasureBag thưởng tiền: {value}");
+                //Debug.Log($"💰 TreasureBag thưởng tiền: {value}");
                 break;
 
             // 💪 Strength
             case 1:
                 PlayerPrefs.SetInt(STRENGTH_KEY, 1);
                 PlayerPrefs.Save();
-                if (hook != null)
-                    hook.ShowSpecialReward("💪 Strength!");
-                Debug.Log("💪 Nhận được Strength!");
+                if (strengthNotify != null)
+                {
+                    ShowNotification(strengthNotify);
+                    HighValueSound.Play();
+                }
+                //Debug.Log("💪 Nhận được Strength!");
                 break;
 
             // 💣 Dynamite
             case 2:
-                AddDynamite(1);
-                if (hook != null)
-                    hook.ShowSpecialReward("+1 💣 Dynamite!");
-                Debug.Log("💣 Nhận được Dynamite!");
-                
+                ThrowingDynamite.Instance.AddDynamite(1);
+                //Debug.Log("💣 Nhận được Dynamite!");
+                if (dynamiteNotify != null)
+                {
+                    ShowNotification(dynamiteNotify);
+                    HighValueSound.Play();
+                }
                 break;
         }
     }
@@ -88,14 +97,12 @@ public class Item : MonoBehaviour
         hook.AddGold(amount);
     }
 
-    private void AddDynamite(int amount)
+    private void ShowNotification(GameObject notifyObj)
     {
-        int current = PlayerPrefs.GetInt(DYNAMITE_KEY, 0);
-        current += amount;
-        PlayerPrefs.SetInt(DYNAMITE_KEY, current);
-        PlayerPrefs.Save();
+        // Tạo bản sao thông báo tại giữa màn hình (hoặc vị trí hiện tại)
+        GameObject clone = Instantiate(notifyObj);
 
-        if (ThrowingDynamite.Instance != null)
-            ThrowingDynamite.Instance.AddDynamite(0); // cập nhật lại UI
+        // Hiện thông báo trong 2 giây rồi ẩn đi
+        Destroy(clone, 2f);
     }
 }

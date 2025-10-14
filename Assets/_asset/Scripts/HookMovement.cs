@@ -150,7 +150,7 @@ public class HookMovement : MonoBehaviour
             moveDown = false; // bắt đầu kéo lên
             ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
             currentItem = other.gameObject; // lưu lại item
-            Debug.Log("Kéo Item lên");
+            //Debug.Log("Kéo Item lên");
         }
     }
 
@@ -171,7 +171,7 @@ public class HookMovement : MonoBehaviour
         if (currentItem == null && move_speed != initial_move_speed)
         {
             ResetMoveSpeed();
-            Debug.Log("Item bị destroy, khôi phục tốc độ ban đầu");
+            //Debug.Log("Item bị destroy, khôi phục tốc độ ban đầu");
         }
     }
 }

@@ -158,28 +158,17 @@ public class Hook : MonoBehaviour
 
     public void ShowItemValue(int value)
     {
-        if (GoldScore != null)
-        {
-            GoldScore.gameObject.SetActive(true);
-            GoldScore.text = "$" + value.ToString();
+        // Nếu GoldScore null thì thoát ngay, không làm gì cả
+        if (GoldScore == null || value == 0)
+            return;
 
-            CancelInvoke(nameof(HideItemValue));
-            Invoke(nameof(HideItemValue), 2f); // ⏱ ẩn sau 2 giây
-        }
+        GoldScore.gameObject.SetActive(true);
+        GoldScore.text = "$" + value.ToString();
+
+        CancelInvoke(nameof(HideItemValue));
+        Invoke(nameof(HideItemValue), 2f); // ⏱ ẩn sau 2 giây
     }
 
-    // 👇 Gọi từ Item để hiển thị phần thưởng đặc biệt
-    public void ShowSpecialReward(string rewardText)
-    {
-        if (GoldScore != null)
-        {
-            GoldScore.gameObject.SetActive(true);
-            GoldScore.text = rewardText;
-
-            CancelInvoke(nameof(HideItemValue));
-            Invoke(nameof(HideItemValue), 2f); // ẩn sau 2 giây
-        }
-    }
 
 
     private void HideItemValue()
