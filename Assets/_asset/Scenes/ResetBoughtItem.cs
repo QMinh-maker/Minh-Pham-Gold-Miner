@@ -8,7 +8,7 @@ public class ResetBoughtItem : MonoBehaviour
     private const string POLISH_KEY = "Diamond_polish";
     private const string STRENGTH_KEY = "Strength_drink";
     private const string CLOVER_KEY = "Luck_clover";
-    private const string DYNAMITE_KEY = "DynamiteCount";
+    //private const string DYNAMITE_KEY = "DynamiteCount";
 
 
     private void Awake()
@@ -22,7 +22,7 @@ public class ResetBoughtItem : MonoBehaviour
         PlayerPrefs.SetInt(POLISH_KEY, 0);
         PlayerPrefs.SetInt(STRENGTH_KEY, 0);
         PlayerPrefs.SetInt(CLOVER_KEY, 0);
-        PlayerPrefs.SetInt(DYNAMITE_KEY, 0);
+        //PlayerPrefs.SetInt(DYNAMITE_KEY, 0);
         PlayerPrefs.Save();
 
         Debug.Log("Đã reset toàn bộ item store về 0!");

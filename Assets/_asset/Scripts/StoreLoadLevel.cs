@@ -14,7 +14,7 @@ public class StoreLoadLevel : MonoBehaviour
 
         // Nếu đây là lần đầu, đặt bắt đầu từ 2
         if (StoreLevelNumber < 2)
-            StoreLevelNumber = 2;
+            StoreLevelNumber = 1;
         else
             StoreLevelNumber++; // tăng thêm 1 mỗi lần mở scene
 

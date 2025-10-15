@@ -822,6 +822,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6531570123653502531, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: dynamiteCountText
+      value: 
+      objectReference: {fileID: 373570371}
+    - target: {fileID: 8461730984257778179, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: GoldScore
+      value: 
+      objectReference: {fileID: 307940814}
+    - target: {fileID: 8461730984257778179, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 523332897}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
 --- !u!114 &368560012 stripped
@@ -2017,7 +2029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &997784158
 RectTransform:
   m_ObjectHideFlags: 0

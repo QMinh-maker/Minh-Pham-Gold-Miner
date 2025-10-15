@@ -1505,6 +1505,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6531570123653502531, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: dynamiteCountText
+      value: 
+      objectReference: {fileID: 373570371}
+    - target: {fileID: 8461730984257778179, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: GoldScore
+      value: 
+      objectReference: {fileID: 307940814}
+    - target: {fileID: 8461730984257778179, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 523332897}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ce670133ad4504b89747a30fd7cd03, type: 3}
 --- !u!114 &800045849 stripped
@@ -2883,7 +2895,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 173539141}
   - {fileID: 1063266381}
   - {fileID: 688356765}
   - {fileID: 1517582310}
@@ -2901,6 +2912,7 @@ Transform:
   - {fileID: 1093585581}
   - {fileID: 319542447}
   - {fileID: 1491027198}
+  - {fileID: 173539141}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

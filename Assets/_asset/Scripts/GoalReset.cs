@@ -10,7 +10,7 @@ public class GoalReset : MonoBehaviour
         PlayerPrefs.SetInt("LevelIndex", 1);
         PlayerPrefs.Save();
         PlayerPrefs.SetInt("PlayerScore", 0);
-
+        PlayerPrefs.SetInt("StoreLevelNumber", 1);
         Debug.Log("Reset LevelIndex về 1, money ve 0");
     }
 }
