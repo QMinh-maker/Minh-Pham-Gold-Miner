@@ -42,7 +42,7 @@ public class SalesManControl : MonoBehaviour
 
     private void LoadNextScene()
     {
-        //SceneManager.LoadScene("Next Goals"); // đổi tên scene phù hợp
-        SceneManager.LoadScene("explove test");
+        SceneManager.LoadScene("Next Goals"); // đổi tên scene phù hợp
+        //SceneManager.LoadScene("explove test");
     }
 }

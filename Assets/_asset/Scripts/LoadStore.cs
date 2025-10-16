@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadStore : MonoBehaviour
 {
+    public string nextSceneName;
     public void OpenStore()
     {
-        int lastSceneIndex = SceneManager.sceneCountInBuildSettings - 1; // lấy scene cuối cùng
-        SceneManager.LoadScene(lastSceneIndex);
+       
+        SceneManager.LoadScene(nextSceneName);
     }
 }

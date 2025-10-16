@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelGoal : MonoBehaviour
 {
-    public float timeLimit = 60f;                 // Thời gian giới hạn
+    private float timeLimit = 61f;                 // Thời gian giới hạn
     public string nextSceneName;       // Tên scene tiếp theo
     public string gameOverSceneName = "GameOver"; // Tên scene GameOver
 
