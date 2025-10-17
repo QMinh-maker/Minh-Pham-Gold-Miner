@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: New SkeletonDataAsset
+  m_Name: Miner Skeleton
   m_EditorClassIdentifier: 
-  atlasAssets: []
+  atlasAssets:
+  - {fileID: 11400000, guid: 475b538893bda8d40909661954d1a6d4, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: 61ecedcb3f5f08a49b952de5549d6aa4, type: 3}
   isUpgradingBlendModeMaterials: 0
@@ -27,4 +28,4 @@ MonoBehaviour:
   toAnimation: []
   duration: []
   defaultMix: 0
-  controller: {fileID: 0}
+  controller: {fileID: 9100000, guid: f16c15dd352217b4ebf03c743c3d19a0, type: 2}

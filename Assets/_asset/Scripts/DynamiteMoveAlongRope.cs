@@ -21,7 +21,7 @@ public class DynamiteMoveAlongRope : MonoBehaviour
         if (!moving || startPoint == null || hookPoint == null) return;
 
         // Đi từ người ném đến hook theo đường thẳng
-        t += Time.deltaTime * 1.5f; // tốc độ đi có thể chỉnh
+        t += Time.deltaTime *5f; // tốc độ đi có thể chỉnh
         transform.position = Vector3.Lerp(startPoint.position, hookPoint.position, t);
 
         // Hướng quay theo dây
@@ -32,8 +32,6 @@ public class DynamiteMoveAlongRope : MonoBehaviour
         if (t >= 1f)
         {
             moving = false;
-            // Ở đây có thể gọi nổ hoặc huỷ
-            // Destroy(gameObject, 0.1f);
         }
     }
 }
