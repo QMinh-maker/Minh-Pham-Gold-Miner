@@ -36,7 +36,7 @@ public class Hook : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Miner").transform;
+        player = GameObject.Find("MinerSkeleton").transform;
 
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
