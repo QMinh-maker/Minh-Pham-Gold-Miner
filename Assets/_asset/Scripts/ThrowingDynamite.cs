@@ -14,6 +14,8 @@ public class ThrowingDynamite : MonoBehaviour
     private int dynamiteCount;
     private const string DYNAMITE_KEY = "DynamiteCount";
 
+    private Animator Animator;
+
     void Awake()
     {
         // Đảm bảo chỉ có 1 instance
@@ -52,6 +54,11 @@ public class ThrowingDynamite : MonoBehaviour
         {
             Debug.Log("Hết dynamite, không thể ném!");
             return;
+        }
+
+        if (Animator != null)
+        {
+            Animator.SetTrigger("Throwing"); // 👈 Kích hoạt animation
         }
 
         // Giảm số lượng và cập nhật UI

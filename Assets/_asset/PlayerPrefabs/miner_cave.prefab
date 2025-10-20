@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 970202909356379065}
   - component: {fileID: 970202909356379066}
   - component: {fileID: 970202909356379045}
+  - component: {fileID: 8234767632828823189}
   m_Layer: 0
   m_Name: MinerSkeleton
   m_TagString: Untagged
@@ -252,6 +253,18 @@ MonoBehaviour:
   DynamiteOffset: {x: 0, y: 0, z: 0}
   hookScript: {fileID: 8653878995695834235}
   dynamiteCountText: {fileID: 0}
+--- !u!114 &8234767632828823189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970202909356379067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea56db8671d6a844b214ba790a8feae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5413388297925655028
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,8 +499,10 @@ MonoBehaviour:
   min_Z: -80
   max_Z: 80
   rotate_speed: 70
+  canRotate: 0
   move_speed: 450
   initial_move_speed: 1000
+  moveDown: 0
   maxRopeLength: 1000
 --- !u!114 &494630088307207468
 MonoBehaviour:
@@ -611,7 +626,7 @@ MonoBehaviour:
   throwingDynamite: {fileID: 0}
   valueSound: {fileID: 8300000, guid: c200e0db970461b41994dff398884b02, type: 3}
   pullSound: {fileID: 8300000, guid: 63ac03cfbae8f004da8b31ae4020ec73, type: 3}
-  coinSound: {fileID: 8300000, guid: 23a4d773de09c9f4788237a6a4837295, type: 3}
+  coinSound: {fileID: 8300000, guid: 7b4780e2fbd17af4fac9cb3a7ca6710f, type: 3}
 --- !u!58 &252440355611862490
 CircleCollider2D:
   m_ObjectHideFlags: 0

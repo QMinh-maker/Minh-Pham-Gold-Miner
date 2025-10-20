@@ -26,7 +26,7 @@ public class HookMovement : MonoBehaviour
     private Hook hook;
     private GameObject currentItem;
 
-    
+   
 
     private void Awake()
     {
@@ -182,6 +182,15 @@ public class HookMovement : MonoBehaviour
         }
     }
 
-   
+    public bool IsRotating()
+    {
+        return canRotate;
+    }
+
+    public bool IsMovingDown()
+    {
+        return moveDown;
+    }
+
 
 }
