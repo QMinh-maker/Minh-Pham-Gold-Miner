@@ -9,7 +9,7 @@ public class HookMovement : MonoBehaviour
     public float rotate_speed = 5f;         // Tốc độ lắc qua lại
     private float rotate_angle;             // Góc hiện tại
     private bool rotate_right;              // Đang quay sang phải hay trái
-    private bool canRotate;                 // Có được lắc nữa không
+    public bool canRotate;                 // Có được lắc nữa không
 
     public float move_speed = 3f;           // Tốc độ di chuyển móc
     public float initial_move_speed;       // Lưu lại tốc độ ban đầu
@@ -17,7 +17,7 @@ public class HookMovement : MonoBehaviour
    
     private float initial_Y;                // Vị trí Y ban đầu (mốc reset)
 
-    private bool moveDown;                  // Trạng thái: đang đi xuống
+    public bool moveDown;                  // Trạng thái: đang đi xuống
     private RopeRenderer ropeRenderer;      // Script vẽ dây
 
     public float maxRopeLength ;            // Chiều dài dây tối đa
@@ -25,6 +25,8 @@ public class HookMovement : MonoBehaviour
 
     private Hook hook;
     private GameObject currentItem;
+
+    
 
     private void Awake()
     {
@@ -39,12 +41,12 @@ public class HookMovement : MonoBehaviour
         canRotate = true;
         startPos = transform.position;
 
-        //MinerAnimationControl.Instance.PlayIdle();
-        // Lưu lại điểm gốc (điểm neo dây) và cho phép lắc dây qua lại
+        
     }
 
     void Update()
     {
+        
         Rotate(); //lắc dây qua lại khi đang nghỉ
         GetInput();//kiểm tra xem người chơi có thả dây ko
         MoveRope();//xử lý di chuyển lên xuống của móc
@@ -92,7 +94,7 @@ public class HookMovement : MonoBehaviour
                 //Khi bấm chuột trái: Nếu đang ở trạng thái nghỉ
                 //(có thể lắc) sẽ ngừng lắc(canRotate = false) khi
                 //bắt đầu thả xuống
-                //MinerAnimationControl.Instance.PlayDig();
+               
             }
         }
     }
@@ -118,7 +120,7 @@ public class HookMovement : MonoBehaviour
                 // Không cho bắt item khi dây chạm max length
                 if (hook != null)
                     hook.DisableCatch();
-                //MinerAnimationControl.Instance.PlayPull();
+                
             }
         }
         else
@@ -137,7 +139,7 @@ public class HookMovement : MonoBehaviour
             // Cho phép bắt item lại khi về Miner
             if (hook != null)
                 hook.EnableCatch();
-            //MinerAnimationControl.Instance.PlayIdle();
+            
         }
         else
         {
@@ -155,7 +157,7 @@ public class HookMovement : MonoBehaviour
             currentItem = other.gameObject; // lưu lại item
             //Debug.Log("Kéo Item lên");
 
-            //MinerAnimationControl.Instance.PlayPull();
+            
         }
     }
 
@@ -179,4 +181,7 @@ public class HookMovement : MonoBehaviour
             //Debug.Log("Item bị destroy, khôi phục tốc độ ban đầu");
         }
     }
+
+   
+
 }
