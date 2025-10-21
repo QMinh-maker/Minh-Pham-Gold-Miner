@@ -14,7 +14,7 @@ public class ThrowingDynamite : MonoBehaviour
     private int dynamiteCount;
     private const string DYNAMITE_KEY = "DynamiteCount";
 
-    private Animator Animator;
+    private Animator minerAnimator;
 
     void Awake()
     {
@@ -27,6 +27,7 @@ public class ThrowingDynamite : MonoBehaviour
         // Lấy dữ liệu dynamite đã lưu
         dynamiteCount = PlayerPrefs.GetInt(DYNAMITE_KEY, 0);
         UpdateUI();
+        minerAnimator = GetComponent<Animator>();
     }
 
     // 👇 Hàm này rất quan trọng — để Item có thể cộng thêm dynamite
@@ -56,9 +57,9 @@ public class ThrowingDynamite : MonoBehaviour
             return;
         }
 
-        if (Animator != null)
+        if (minerAnimator != null)
         {
-            Animator.SetTrigger("Throwing"); // 👈 Kích hoạt animation
+            minerAnimator.SetTrigger("Throwing"); // 👈 Kích hoạt animation
         }
 
         // Giảm số lượng và cập nhật UI

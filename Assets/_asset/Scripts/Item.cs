@@ -16,7 +16,9 @@ public class Item : MonoBehaviour
 
     public AudioSource HighValueSound;
 
-    void Start()
+    
+
+    void Update()
     {
         ApplyStoreEffects();
     }
@@ -74,6 +76,12 @@ public class Item : MonoBehaviour
                 {
                     ShowNotification(strengthNotify);
                     HighValueSound.Play();
+                    
+                }
+                Animator minerAnim = FindObjectOfType<MinerAnimationControl>()?.GetComponent<Animator>();
+                if (minerAnim != null)
+                {
+                    minerAnim.SetTrigger("Strong");
                 }
                 //Debug.Log("💪 Nhận được Strength!");
                 break;
@@ -86,7 +94,8 @@ public class Item : MonoBehaviour
                 {
                     ShowNotification(dynamiteNotify);
                     HighValueSound.Play();
-                }
+                    FindObjectOfType<TempoPause>()?.PauseForOneSecond();
+                }   
                 break;
         }
     }
@@ -101,8 +110,8 @@ public class Item : MonoBehaviour
     {
         // Tạo bản sao thông báo tại giữa màn hình (hoặc vị trí hiện tại)
         GameObject clone = Instantiate(notifyObj);
-
-        // Hiện thông báo trong 2 giây rồi ẩn đi
-        Destroy(clone, 2f);
+       
+        // Hiện thông báo trong 1 giây rồi ẩn đi
+        Destroy(clone, 1f);
     }
 }

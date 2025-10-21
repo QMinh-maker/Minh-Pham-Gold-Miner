@@ -58,6 +58,8 @@ public class Hook : MonoBehaviour
     {
         if (isPulling)
         {
+            Debug.Log(Vector2.Distance(hookHead.position, player.position));
+            
             rope.RenderLine(hookHead.position, false);
 
             if (hookedItem != null)
@@ -67,8 +69,7 @@ public class Hook : MonoBehaviour
                 PlayPullLoop();
 
             // Khi gần Miner → kéo xong
-            if (Vector2.Distance(hookHead.position, player.position) <= 100 &&
-                Vector2.Distance(hookHead.position, player.position) >= 10)
+            if (Vector2.Distance(hookHead.position, player.position) <= 55)                 
             {
                 if (hookedItem != null)
                 {
@@ -164,9 +165,11 @@ public class Hook : MonoBehaviour
 
         GoldScore.gameObject.SetActive(true);
         GoldScore.text = "$" + value.ToString();
-
         CancelInvoke(nameof(HideItemValue));
-        Invoke(nameof(HideItemValue), 2f); // ⏱ ẩn sau 2 giây
+        FindObjectOfType<TempoPause>()?.PauseForOneSecond();
+
+
+        Invoke(nameof(HideItemValue), 1f); // ⏱ ẩn sau 1 giây
     }
 
 
@@ -181,6 +184,7 @@ public class Hook : MonoBehaviour
             totalGold += pendingValue;     // 💰 chỉ cộng ở đây
             pendingValue = 0;
             PlaySound(coinSound);          // 🔊 âm cộng tiền
+            
             UpdateScoreUI();               // 🪙 cập nhật UI sau khi text ẩn
         }
     }

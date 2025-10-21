@@ -155,9 +155,7 @@ public class HookMovement : MonoBehaviour
             moveDown = false; // bắt đầu kéo lên
             ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
             currentItem = other.gameObject; // lưu lại item
-            //Debug.Log("Kéo Item lên");
-
-            
+                     
         }
     }
 
