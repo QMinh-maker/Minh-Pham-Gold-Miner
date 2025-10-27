@@ -58,7 +58,7 @@ public class Hook : MonoBehaviour
     {
         if (isPulling)
         {
-            Debug.Log(Vector2.Distance(hookHead.position, player.position));
+            //Debug.Log(Vector2.Distance(hookHead.position, player.position));
             
             rope.RenderLine(hookHead.position, false);
 

@@ -63,7 +63,6 @@ public class Item : MonoBehaviour
                 if (hook != null)
                 {
                     hook.ShowItemValue(value);
-                    hook.StartCoroutine(AddMoneyAfterDelay(hook, value, 2f));
                 }
                 //Debug.Log($"💰 TreasureBag thưởng tiền: {value}");
                 break;
@@ -100,11 +99,6 @@ public class Item : MonoBehaviour
         }
     }
 
-    private IEnumerator AddMoneyAfterDelay(Hook hook, int amount, float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        hook.AddGold(amount);
-    }
 
     private void ShowNotification(GameObject notifyObj)
     {

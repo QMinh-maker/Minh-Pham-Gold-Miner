@@ -4,12 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class SkipLevelButton : MonoBehaviour
 {
-    public Button skipButton;             // Nút skip
-    public Image buttonImage;             // Hình ảnh của nút (để đổi màu hoặc sprite)
-    public Sprite lockedSprite;           // Sprite khi bị khóa (xám)
-    public Sprite unlockedSprite;         // Sprite khi mở (xanh)
+    [Header("UI References")]
+    public GameObject skipLockedImage;   // Ảnh xám (bị khóa)
+    public Button skipButtonGreen;       // Nút xanh thật để skip level
 
-
+    
     public string nextSceneName;
     private int n;                          //Màn chơi hiện tại
     private int requiredScore;              // Điểm yêu cầu để mở
@@ -25,7 +24,12 @@ public class SkipLevelButton : MonoBehaviour
 
         // Tính điểm yêu cầu theo công thức
         requiredScore = 135 * n * n + 140 * n + 375;
-        UpdateButtonState();
+        Debug.Log(requiredScore);
+        // Cập nhật trạng thái ban đầu
+        UpdateSkipButtonState();
+
+        // Gán sự kiện khi bấm nút xanh
+        skipButtonGreen.onClick.AddListener(OnSkipLevel);
     }
 
     // Gọi khi nhấn nút Skip Level
@@ -37,11 +41,12 @@ public class SkipLevelButton : MonoBehaviour
         }
     }
 
-    private void UpdateButtonState()
+    private void UpdateSkipButtonState()
     {
         bool canSkip = playerScore >= requiredScore;
 
-        skipButton.interactable = canSkip;
-        buttonImage.sprite = canSkip ? unlockedSprite : lockedSprite;
+        // Nếu chưa đủ điểm
+        skipLockedImage.SetActive(!canSkip);  // Hiện ảnh xám
+        skipButtonGreen.gameObject.SetActive(canSkip);  // Ẩn/hiện nút xanh
     }
 }
