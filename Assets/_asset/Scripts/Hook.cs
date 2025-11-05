@@ -1,6 +1,7 @@
 ﻿using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using static Spine.Unity.Examples.MixAndMatchSkinsExample;
 
 [RequireComponent(typeof(AudioSource))]
 public class Hook : MonoBehaviour
@@ -8,7 +9,10 @@ public class Hook : MonoBehaviour
     private bool isPulling = false;
     private bool canCatch = true;
 
-    public float itemOffsetY = 0.3f;
+    public float itemOffsetY ;
+    //private bool isBigItem = false;  // Đánh dấu item lớn
+    //public float originalOffsetY;
+
 
     private Transform player;
     private Transform hookedItem;
@@ -57,19 +61,25 @@ public class Hook : MonoBehaviour
     void Update()
     {
         if (isPulling)
-        {
-            //Debug.Log(Vector2.Distance(hookHead.position, player.position));
-            
+        {             
             rope.RenderLine(hookHead.position, false);
+            string itemName = hookedItem.name.ToLower();
 
-            if (hookedItem != null)
+            // Nếu là BigGold hoặc GreatGold → x2 khoảng cách
+            if (itemName.Contains("biggold") || itemName.Contains("greatgold"))
+            {
+                hookedItem.position = hookHead.position - hookHead.up * itemOffsetY * 2f;
+            }
+            else
+            {
                 hookedItem.position = hookHead.position - hookHead.up * itemOffsetY;
+            }
 
             if (!isPullSoundPlaying)
                 PlayPullLoop();
 
             // Khi gần Miner → kéo xong
-            if (Vector2.Distance(hookHead.position, player.position) <= 55)                 
+            if (Vector2.Distance(hookHead.position, player.position) <= 45)
             {
                 if (hookedItem != null)
                 {
@@ -77,22 +87,22 @@ public class Hook : MonoBehaviour
 
                     if (item != null)
                     {
-                        // Gọi phần thưởng (nếu là Special Item)
                         item.GiveTreasureReward();
-
                         pendingValue = item.value;
                         Destroy(hookedItem.gameObject);
 
-                        // Hiển thị giá trị item
                         ShowItemValue(pendingValue);
                     }
                 }
 
+                // Reset thông số (về bình thường)
                 hookedItem = null;
                 isPulling = false;
                 StopPullLoop();
                 EnableCatch();
                 PlaySound(valueSound);
+
+              
             }
         }
     }
