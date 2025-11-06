@@ -26,7 +26,7 @@ public class HookMovement : MonoBehaviour
     private Hook hook;
     private GameObject currentItem;
 
-   
+    public AudioSource ropeSound;
 
     private void Awake()
     {
@@ -94,8 +94,9 @@ public class HookMovement : MonoBehaviour
                 //Khi bấm chuột trái: Nếu đang ở trạng thái nghỉ
                 //(có thể lắc) sẽ ngừng lắc(canRotate = false) khi
                 //bắt đầu thả xuống
-               
-            }
+                if (ropeSound != null && !ropeSound.isPlaying)
+                    ropeSound.Play();
+            }           
         }
     }
 
