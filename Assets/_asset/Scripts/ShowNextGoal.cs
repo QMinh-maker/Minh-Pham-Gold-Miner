@@ -15,11 +15,8 @@ public class ShowNextGoal : MonoBehaviour
     void Start()
     {
         // Lấy n hiện tại từ PlayerPrefs
-        int n = PlayerPrefs.GetInt("LevelForScore",2); //mặc định 1 nếu chưa có
-
-        // Tăng n thêm 1 mỗi lần scene này được mở
-        n += 1;
-        PlayerPrefs.SetInt("LevelForScore", n);
+        int n = PlayerPrefs.GetInt("LevelIndex", 1); //mặc định 1 nếu chưa có
+        PlayerPrefs.SetInt("LevelIndex",n);
         PlayerPrefs.Save();
 
         // Tính điểm yêu cầu
@@ -39,10 +36,23 @@ public class ShowNextGoal : MonoBehaviour
 
     void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        if (currentSceneIndex + 1 < SceneManager.sceneCountInBuildSettings)
+        int n = PlayerPrefs.GetInt("LevelIndex", 1);
+        string nextSceneName;
+
+        if (n <= 15)
         {
-            SceneManager.LoadScene(currentSceneIndex + 1);
+            // Nếu n <= 15 → load đúng scene tên "Level n"
+            nextSceneName = "Level " + n;
+            SceneManager.LoadScene(nextSceneName);
         }
+        else
+        {
+            // Nếu n > 15 → load ngẫu nhiên scene "LevelX" (X từ 1 đến 15)
+            int randomLevel = Random.Range(1, 16);
+            nextSceneName = "Level " + randomLevel;
+            SceneManager.LoadScene(nextSceneName);
+        }
+
+
     }
 }

@@ -669,7 +669,6 @@ GameObject:
   - component: {fileID: 1422273572}
   - component: {fileID: 1422273576}
   - component: {fileID: 1422273577}
-  - component: {fileID: 1422273578}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -837,15 +836,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredScoreText: {fileID: 1190405053}
   waitTime: 3
---- !u!114 &1422273578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422273571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351ce0d9ade64cf4b8fe4b9a37a10b03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

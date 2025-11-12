@@ -2430,8 +2430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0668d4daa37da694693935d3d3a1e0f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Level Passed
-  gameOverSceneName: GameOver
 --- !u!1 &1423229812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,9 +2814,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6725246551600538319, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6830282386031738358, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386031738358, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830282386031738365, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_Pivot.x
@@ -2903,6 +2909,18 @@ PrefabInstance:
     - target: {fileID: 6830282386031738365, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386835822295, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386943972861, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435634966777850338, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}

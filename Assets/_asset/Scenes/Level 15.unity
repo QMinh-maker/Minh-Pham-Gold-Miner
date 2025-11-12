@@ -274,9 +274,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6725246551600538319, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6830282386031738358, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386031738358, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6830282386031738365, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_Pivot.x
@@ -361,6 +369,18 @@ PrefabInstance:
     - target: {fileID: 6830282386031738365, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386835822295, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6830282386943972861, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435634966777850338, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95de03a415a63cd4aaf80a6315963da5, type: 3}
@@ -2623,10 +2643,10 @@ GameObject:
   - component: {fileID: 1422273574}
   - component: {fileID: 1422273573}
   - component: {fileID: 1422273572}
-  - component: {fileID: 1422273575}
   - component: {fileID: 1422273578}
   - component: {fileID: 1422273577}
   - component: {fileID: 1422273576}
+  - component: {fileID: 1422273579}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2684,21 +2704,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1422273575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422273571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c33850d82dfb934bbafc953a8fed852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeLimit: 60
-  nextSceneName: Next Goals
-  gameOverSceneName: GameOver
 --- !u!114 &1422273576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,6 +2743,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelNumberText: {fileID: 1745953989}
+--- !u!114 &1422273579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422273571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c43894dafe70842b6c21057f7704f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1423229812
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,16 +10,16 @@ public class StoreLoadLevel : MonoBehaviour
     void Start()
     {
         // Lấy giá trị hiện tại của StoreLevelNumber (mặc định = 1 nếu chưa có)
-        int StoreLevelNumber = PlayerPrefs.GetInt("StoreLevelNumber", 1);
+        int StoreLevelNumber = PlayerPrefs.GetInt("LevelIndex");
 
         // Nếu đây là lần đầu, đặt bắt đầu từ 2
         if (StoreLevelNumber < 2)
-            StoreLevelNumber = 1;
+            StoreLevelNumber = 2;
         else
             StoreLevelNumber++; // tăng thêm 1 mỗi lần mở scene
 
         // Lưu lại để các scene sau có thể dùng
-        PlayerPrefs.SetInt("StoreLevelNumber", StoreLevelNumber);
+        PlayerPrefs.SetInt("LevelIndex", StoreLevelNumber);
         PlayerPrefs.Save();
 
         // Cập nhật UI
