@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/RandomLevel.cs.meta
 guid: b2c43894dafe70842b6c21057f7704f7
+========
+guid: 806cf8c13a244af40b8271656a5bbfdb
+>>>>>>>> origin/restore-my-work:Assets/SkipLevelButton.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
