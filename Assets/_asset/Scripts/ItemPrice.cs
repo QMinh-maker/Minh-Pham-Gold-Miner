@@ -23,8 +23,8 @@ public class ItemPrice : MonoBehaviour
 
         if (!isInitialized)
         {
-            //price = Random.Range(1, 801);
-            price = 0;
+            price = Random.Range(1, 801);
+            //price = 0;
             isInitialized = true;
         }
 

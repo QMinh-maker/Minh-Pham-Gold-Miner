@@ -12,6 +12,9 @@ public class LevelGoal : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
+        PlayerPrefs.SetInt("PausedState", 0);
+
         timer = timeLimit;
 
         // Lấy n từ PlayerPrefs, mặc định 1 nếu chưa có

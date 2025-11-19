@@ -5,13 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Nếu scene chơi pause → giữ game paused
+        bool wasPaused = PlayerPrefs.GetInt("PausedState", 0) == 1;
+
+        if (wasPaused)
+        {
+            Time.timeScale = 0f;  // vẫn giữ paused
+        }
+        else
+        {
+            Time.timeScale = 1f;  // bình thường
+        }
     }
 
-    public void NextGoal()
-    { 
-        SceneManager.LoadScene((0) + 3);
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("ATestLevel");
     }
 }
