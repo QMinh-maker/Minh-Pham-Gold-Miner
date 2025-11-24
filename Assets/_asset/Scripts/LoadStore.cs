@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class LoadStore : MonoBehaviour
 {
-    public string nextSceneName;
+    [SerializeField] private float waitTime = 3f;
+
+    void Start()
+    {
+        Invoke(nameof(OpenStore), waitTime);
+    }
+
     public void OpenStore()
     {
        
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene("Store");
     }
 }

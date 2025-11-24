@@ -10,10 +10,8 @@ public class LevelGoal : MonoBehaviour
     private int n;                // số màn hiện tại
     private int requiredScore;    // điểm cần
 
-    void Start()
-    {
-        Time.timeScale = 1f;
-        PlayerPrefs.SetInt("PausedState", 0);
+    void Awake()
+    {       
 
         timer = timeLimit;
 
