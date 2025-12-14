@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class HookMovement : MonoBehaviour
 {
-    public float min_Z = -55f, max_Z = 55f; // Giới hạn góc lắc
-    public float rotate_speed = 5f;         // Tốc độ lắc qua lại
+    public float min_Z, max_Z; // Giới hạn góc lắc
+    public float rotate_speed;         // Tốc độ lắc qua lại
     private float rotate_angle;             // Góc hiện tại
     private bool rotate_right;              // Đang quay sang phải hay trái
     public bool canRotate;                 // Có được lắc nữa không
 
-    public float move_speed = 3f;           // Tốc độ di chuyển móc
+    public float move_speed;           // Tốc độ di chuyển móc
     public float initial_move_speed;       // Lưu lại tốc độ ban đầu
 
    
@@ -81,6 +81,7 @@ public class HookMovement : MonoBehaviour
             rotate_right = true;
         }
         //Đảo chiều khi chạm biên.
+        
     }
 
     void GetInput()
@@ -154,16 +155,23 @@ public class HookMovement : MonoBehaviour
         if (other.CompareTag("Item"))
         {
             moveDown = false; // bắt đầu kéo lên
-            ropeRenderer.RenderLine(transform.position, false); // tắt vẽ dây ngay lập tức
-            currentItem = other.gameObject; // lưu lại item
-                     
+            ropeRenderer.RenderLine(transform.position, false);
+            currentItem = other.gameObject;
+
+          
         }
     }
+
 
     public void ApplyWeight(float weight)
     {
         move_speed = move_speed / weight;
         
+    }
+
+    public void ReverseRotateDirection()
+    {
+        rotate_right = !rotate_right;
     }
 
     public void ResetMoveSpeed()

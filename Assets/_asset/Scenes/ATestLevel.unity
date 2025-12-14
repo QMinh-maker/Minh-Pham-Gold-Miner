@@ -1289,6 +1289,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9119670929682387154, guid: 989d49a5f3a2d824a9d2b41a9ab453c4, type: 2}
     - target: {fileID: 4893514117016562006, guid: c53347e6d32aa4f419aaf99f14524fdf, type: 3}
+      propertyPath: maxX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893514117016562006, guid: c53347e6d32aa4f419aaf99f14524fdf, type: 3}
+      propertyPath: minX
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893514117016562006, guid: c53347e6d32aa4f419aaf99f14524fdf, type: 3}
       propertyPath: RopeSound
       value: 
       objectReference: {fileID: 8300000, guid: 3cbd9bf75fd29ad40a8a23363c12001f, type: 3}

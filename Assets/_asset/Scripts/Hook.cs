@@ -92,6 +92,7 @@ public class Hook : MonoBehaviour
                         Destroy(hookedItem.gameObject);
 
                         ShowItemValue(pendingValue);
+                         hookMovement.ReverseRotateDirection();
                     }
                 }
 
