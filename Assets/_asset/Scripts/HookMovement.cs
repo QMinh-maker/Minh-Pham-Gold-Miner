@@ -169,11 +169,6 @@ public class HookMovement : MonoBehaviour
         
     }
 
-    public void ReverseRotateDirection()
-    {
-        rotate_right = !rotate_right;
-    }
-
     public void ResetMoveSpeed()
     {
         move_speed = initial_move_speed;

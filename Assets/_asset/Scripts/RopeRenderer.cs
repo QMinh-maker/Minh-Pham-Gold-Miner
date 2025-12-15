@@ -61,4 +61,8 @@ public class RopeRenderer : MonoBehaviour
             lineRenderer.SetPosition(1, endPos);
         }
     }
+    public float GetCurrentRopeLength(Vector3 hookEndPosition)
+    {
+        return Vector3.Distance(fixedStartPos, hookEndPosition);
+    }
 }

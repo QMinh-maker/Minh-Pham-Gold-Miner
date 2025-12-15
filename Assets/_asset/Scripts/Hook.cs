@@ -21,6 +21,8 @@ public class Hook : MonoBehaviour
     public RopeRenderer rope;
     public Transform hookHead;
 
+    [SerializeField] public float collectRopeLength ;
+
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI GoldScore;
 
@@ -79,7 +81,25 @@ public class Hook : MonoBehaviour
                 PlayPullLoop();
 
             // Khi gần Miner → kéo xong
-            if (Vector2.Distance(hookHead.position, player.position) <= 45)
+            //if (Vector2.Distance(hookHead.position, player.position) <= 45)
+            //{
+            //    if (hookedItem != null)
+            //    {
+            //        Item item = hookedItem.GetComponent<Item>();
+
+            //        if (item != null)
+            //        {
+            //            item.GiveTreasureReward();
+            //            pendingValue = item.value;
+            //            Destroy(hookedItem.gameObject);
+
+            //            ShowItemValue(pendingValue);
+
+            //        }
+            //    }
+            float ropeLength = rope.GetCurrentRopeLength(hookHead.position);
+            Debug.Log(ropeLength);
+            if (ropeLength <= collectRopeLength)
             {
                 if (hookedItem != null)
                 {
@@ -92,8 +112,8 @@ public class Hook : MonoBehaviour
                         Destroy(hookedItem.gameObject);
 
                         ShowItemValue(pendingValue);
-                         hookMovement.ReverseRotateDirection();
                     }
+                    
                 }
 
                 // Reset thông số (về bình thường)

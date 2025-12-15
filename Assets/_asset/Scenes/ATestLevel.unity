@@ -1324,6 +1324,10 @@ PrefabInstance:
       propertyPath: throwingDynamite
       value: 
       objectReference: {fileID: 798776153}
+    - target: {fileID: 8653878995695834235, guid: c53347e6d32aa4f419aaf99f14524fdf, type: 3}
+      propertyPath: collectRopeLength
+      value: 45
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53347e6d32aa4f419aaf99f14524fdf, type: 3}
 --- !u!1 &704182493
