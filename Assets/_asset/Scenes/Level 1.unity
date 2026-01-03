@@ -1379,9 +1379,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2799998612139122088, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1422273581}
+    - target: {fileID: 2799998612139122088, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMusicVolume
+      objectReference: {fileID: 0}
     - target: {fileID: 2799998612480295337, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2799998612549159573, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
       propertyPath: m_Pivot.x
@@ -1470,6 +1478,14 @@ PrefabInstance:
     - target: {fileID: 2799998612549159582, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481383358135758724, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1422273581}
+    - target: {fileID: 5481383358135758724, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSfxVolume
       objectReference: {fileID: 0}
     - target: {fileID: 9021710003950888004, guid: 2886330bde65fce4a9ac18e0e65c29dc, type: 3}
       propertyPath: volumeSettings
